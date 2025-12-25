@@ -161,9 +161,4 @@ reports/sensitivity/comprehensive_sensitivity.md
 
 # Keep only the output tables (reports/tables/) and figures (reports/figures/)
 
-# Untitled/draft documents
-Untitled*.md
-*draft*.md
-*DRAFT*.md
-
-.claude/
+ 
