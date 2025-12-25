@@ -144,6 +144,7 @@ This project follows strict reproducibility guardrails:
 
 ## Documentation
 
+- **[FINDINGS.md](FINDINGS.md)** — Key results, neighborhood patterns, and policy implications
 - **[METHODOLOGY.md](METHODOLOGY.md)** — Complete methodology, data sources, and interpretation guidelines
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — How to contribute to this project
 - **[data/raw/ACQUISITION.md](data/raw/ACQUISITION.md)** — Step-by-step data download instructions
