@@ -1,0 +1,111 @@
+# NYC Visibility Atlas - Core Parameters
+# This file defines runtime parameters per Sections 4-5 of the project contract.
+
+# =============================================================================
+# GEOGRAPHY CONFIGURATION (Section 5)
+# =============================================================================
+geography:
+  # Primary geography for core results (Section 5.1)
+  # Options: "nta" (Neighborhood Tabulation Area) or "zcta" (ZIP Code Tabulation Area)
+  primary: "nta"
+  
+  # Optional sensitivity geography (for robustness checks only)
+  sensitivity: "zcta"
+  
+  # Expected CRS for geographic data
+  crs_wgs84: "EPSG:4326"
+  crs_projected: "EPSG:2263"  # NY State Plane Long Island (feet)
+
+# =============================================================================
+# TIME WINDOWS (Section 4)
+# =============================================================================
+time_windows:
+  # Primary analytic window aligned to ACS 5-year period
+  primary:
+    id: "2018_2022"
+    start_year: 2018
+    end_year: 2022
+    acs_vintage: "2022"  # ACS 5-year ending year
+    description: "Primary 5-year window aligned to ACS 2018-2022"
+  
+  # Optional sensitivity windows for temporal robustness
+  sensitivity:
+    - id: "2017_2021"
+      start_year: 2017
+      end_year: 2021
+      acs_vintage: "2021"
+      description: "Adjacent 5-year window for sensitivity"
+
+# =============================================================================
+# SMALL NUMBERS POLICY (Section 5.3)
+# =============================================================================
+small_numbers:
+  # Minimum denominator threshold per cell
+  min_denominator: 50
+  
+  # Minimum numerator threshold per cell
+  min_numerator: 10
+  
+  # Suppression rules
+  suppression:
+    # If observed_count < suppression_threshold, flag as suppressed
+    suppression_threshold: 5
+    
+    # If observed_count >= suppression_threshold but < low_reliability_threshold, flag as low_reliability
+    low_reliability_threshold: 10
+  
+  # Reliability flag values
+  reliability_flags:
+    high: "high"
+    low: "low"
+    suppressed: "suppressed"
+    unknown: "unknown"
+
+# =============================================================================
+# VISUALIZATION ENCODING (Section 5.3)
+# =============================================================================
+visualization:
+  # Opacity rules for reliability display
+  opacity:
+    high: 1.0
+    low: 0.5
+    suppressed: 0.2
+    unknown: 0.3
+  
+  # Hatching pattern for suppressed/low reliability (CSS pattern reference)
+  hatching:
+    enabled: true
+    pattern: "diagonal"
+    apply_to:
+      - "suppressed"
+      - "low"
+
+# =============================================================================
+# NYC BOUNDING BOX (for QA checks)
+# =============================================================================
+nyc_bounds:
+  min_lon: -74.30
+  max_lon: -73.65
+  min_lat: 40.47
+  max_lat: 40.95
+  tolerance: 0.01
+
+# =============================================================================
+# PROCESSING PARAMETERS
+# =============================================================================
+processing:
+  # Random seed for reproducibility (clustering, bootstrapping)
+  random_seed: 42
+  
+  # Number of bootstrap iterations for stability checks
+  n_bootstrap: 100
+  
+  # Percentile rank parameters
+  percentile:
+    method: "average"  # Handling of ties: "average", "min", "max"
+  
+  # Age standardization
+  standardization:
+    enabled: true
+    standard_population: "us_2000"  # Reference: US 2000 standard population
+

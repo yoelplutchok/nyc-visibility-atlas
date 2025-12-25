@@ -1,0 +1,4 @@
+# NYC Visibility Atlas - Project Root Marker
+# This file marks the canonical root of the repository.
+# All path resolution in src/visibility_atlas/paths.py uses this file.
+

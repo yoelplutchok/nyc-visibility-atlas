@@ -1,0 +1,533 @@
+uhf_code,uhf_name,indicator_id,indicator_name,estimate,se,ci_low,ci_high,year,stratum,reliability_source,data_source
+102,NE Bronx,asthma,Asthma (current),7.1,3.520408163265306,2.9,16.7,2019,total,low,epiquery_export
+104,Pelham-Throgs Neck,asthma,Asthma (current),8.0,2.1428571428571423,4.7,13.1,2019,total,high,epiquery_export
+105,South Bronx,asthma,Asthma (current),6.2,1.5816326530612246,3.8,10.0,2019,total,high,epiquery_export
+201,Greenpoint,asthma,Asthma (current),3.9,1.6581632653061227,1.8,8.3,2019,total,low,epiquery_export
+202,Downtown-Heights-Slope,asthma,Asthma (current),6.2,2.5255102040816326,2.9,12.8,2019,total,low,epiquery_export
+203,Bed Stuy-Crown Heights,asthma,Asthma (current),6.5,2.270408163265306,3.3,12.2,2019,total,low,epiquery_export
+204,East New York,asthma,Asthma (current),8.4,4.081632653061224,3.4,19.4,2019,total,low,epiquery_export
+206,Borough Park,asthma,Asthma (current),2.1,0.7653061224489794,1.1,4.1,2019,total,low,epiquery_export
+207,Flatbush,asthma,Asthma (current),7.1,2.5000000000000004,3.6,13.4,2019,total,low,epiquery_export
+208,Canarsie,asthma,Asthma (current),6.5,3.0357142857142856,2.8,14.7,2019,total,low,epiquery_export
+209,Bensonhurst,asthma,Asthma (current),8.5,2.806122448979592,4.5,15.5,2019,total,low,epiquery_export
+210,Coney Island,asthma,Asthma (current),2.7,1.0204081632653061,1.3,5.3,2019,total,low,epiquery_export
+211,Williamsburg-Bushwk,asthma,Asthma (current),5.5,2.295918367346939,2.6,11.6,2019,total,low,epiquery_export
+301,Washington Heights,asthma,Asthma (current),8.4,3.3418367346938775,3.9,17.0,2019,total,low,epiquery_export
+302,Central Harlem,asthma,Asthma (current),2.6,1.0714285714285714,1.2,5.4,2019,total,low,epiquery_export
+303,East Harlem,asthma,Asthma (current),4.7,2.4999999999999996,1.8,11.6,2019,total,low,epiquery_export
+304,Upper West Side,asthma,Asthma (current),4.5,2.5255102040816326,1.7,11.6,2019,total,low,epiquery_export
+306,Chelsea-Village,asthma,Asthma (current),2.9,1.1479591836734695,1.4,5.9,2019,total,low,epiquery_export
+309,Union Square-Lower Manhattan,asthma,Asthma (current),4.5,1.530612244897959,2.4,8.4,2019,total,low,epiquery_export
+401,"LIC, Astoria",asthma,Asthma (current),0.4,0.28061224489795916,0.1,1.2,2019,total,low,epiquery_export
+402,West Queens,asthma,Asthma (current),1.6,0.739795918367347,0.7,3.6,2019,total,low,epiquery_export
+403,Flushing,asthma,Asthma (current),1.0,1.1989795918367347,0.2,4.9,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,asthma,Asthma (current),2.1,1.1989795918367347,0.8,5.5,2019,total,low,epiquery_export
+405,Ridgewood,asthma,Asthma (current),3.7,2.0408163265306123,1.4,9.4,2019,total,low,epiquery_export
+407,SouthWest Queens,asthma,Asthma (current),3.0,1.1224489795918369,1.5,5.9,2019,total,low,epiquery_export
+408,Jamaica,asthma,Asthma (current),3.2,1.7346938775510203,1.2,8.0,2019,total,low,epiquery_export
+410,Rockaway,asthma,Asthma (current),11.6,5.051020408163265,5.0,24.8,2019,total,low,epiquery_export
+501,Northern SI,asthma,Asthma (current),3.7,1.862244897959184,1.5,8.8,2019,total,low,epiquery_export
+101,Kingsbridge,diabetes,Diabetes (ever),13.9,2.908163265306123,9.2,20.6,2019,total,high,epiquery_export
+102,NE Bronx,diabetes,Diabetes (ever),17.1,3.622448979591837,11.1,25.3,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,diabetes,Diabetes (ever),16.4,2.7295918367346936,11.7,22.4,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,diabetes,Diabetes (ever),18.1,2.831632653061225,13.2,24.3,2019,total,high,epiquery_export
+105,South Bronx,diabetes,Diabetes (ever),14.8,2.1683673469387754,11.0,19.5,2019,total,high,epiquery_export
+201,Greenpoint,diabetes,Diabetes (ever),10.5,3.5459183673469385,5.5,19.4,2019,total,low,epiquery_export
+202,Downtown-Heights-Slope,diabetes,Diabetes (ever),7.3,1.5816326530612246,4.8,11.0,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,diabetes,Diabetes (ever),10.9,1.7602040816326532,7.9,14.8,2019,total,high,epiquery_export
+204,East New York,diabetes,Diabetes (ever),20.8,4.51530612244898,13.3,31.0,2019,total,high,epiquery_export
+205,Sunset Park,diabetes,Diabetes (ever),14.5,3.7755102040816326,8.6,23.4,2019,total,high,epiquery_export
+206,Borough Park,diabetes,Diabetes (ever),10.1,2.2704081632653064,6.5,15.4,2019,total,high,epiquery_export
+207,Flatbush,diabetes,Diabetes (ever),14.3,2.0408163265306123,10.8,18.8,2019,total,high,epiquery_export
+208,Canarsie,diabetes,Diabetes (ever),10.0,2.780612244897959,5.8,16.7,2019,total,high,epiquery_export
+209,Bensonhurst,diabetes,Diabetes (ever),13.5,3.1887755102040813,8.4,20.9,2019,total,high,epiquery_export
+210,Coney Island,diabetes,Diabetes (ever),10.0,1.7857142857142858,7.0,14.0,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,diabetes,Diabetes (ever),15.7,4.387755102040817,8.9,26.1,2019,total,high,epiquery_export
+301,Washington Heights,diabetes,Diabetes (ever),13.7,2.9591836734693877,8.9,20.5,2019,total,high,epiquery_export
+302,Central Harlem,diabetes,Diabetes (ever),11.8,4.005102040816326,6.0,21.7,2019,total,low,epiquery_export
+303,East Harlem,diabetes,Diabetes (ever),23.7,4.362244897959183,16.2,33.3,2019,total,high,epiquery_export
+304,Upper West Side,diabetes,Diabetes (ever),9.7,2.780612244897959,5.5,16.4,2019,total,high,epiquery_export
+305,Upper East Side-Gramercy,diabetes,Diabetes (ever),4.1,1.2755102040816326,2.3,7.3,2019,total,low,epiquery_export
+306,Chelsea-Village,diabetes,Diabetes (ever),5.3,1.8112244897959184,2.8,9.9,2019,total,low,epiquery_export
+309,Union Square-Lower Manhattan,diabetes,Diabetes (ever),12.3,2.4744897959183674,8.3,18.0,2019,total,high,epiquery_export
+401,"LIC, Astoria",diabetes,Diabetes (ever),18.1,4.311224489795918,11.1,28.0,2019,total,high,epiquery_export
+402,West Queens,diabetes,Diabetes (ever),12.0,2.4744897959183674,8.0,17.7,2019,total,high,epiquery_export
+403,Flushing,diabetes,Diabetes (ever),7.6,2.2193877551020407,4.3,13.0,2019,total,high,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,diabetes,Diabetes (ever),7.0,2.0918367346938775,3.9,12.1,2019,total,high,epiquery_export
+405,Ridgewood,diabetes,Diabetes (ever),11.8,2.3469387755102042,7.9,17.1,2019,total,high,epiquery_export
+407,SouthWest Queens,diabetes,Diabetes (ever),18.5,2.8061224489795924,13.6,24.6,2019,total,high,epiquery_export
+408,Jamaica,diabetes,Diabetes (ever),10.5,2.5255102040816326,6.6,16.5,2019,total,high,epiquery_export
+409,SouthEast Queens,diabetes,Diabetes (ever),15.1,4.0561224489795915,8.8,24.7,2019,total,high,epiquery_export
+410,Rockaway,diabetes,Diabetes (ever),10.9,3.4693877551020402,5.8,19.4,2019,total,low,epiquery_export
+501,Northern SI,diabetes,Diabetes (ever),17.5,3.290816326530612,12.0,24.9,2019,total,high,epiquery_export
+503,Southern SI,diabetes,Diabetes (ever),9.9,2.5255102040816326,6.0,15.9,2019,total,high,epiquery_export
+101,Kingsbridge,uninsured,Health insurance type,60.6,5.076530612244896,50.2,70.1,2019,total,high,epiquery_export
+102,NE Bronx,uninsured,Health insurance type,48.1,4.770408163265307,38.8,57.5,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,uninsured,Health insurance type,23.2,3.852040816326531,16.5,31.6,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,uninsured,Health insurance type,35.4,3.6479591836734686,28.6,42.9,2019,total,high,epiquery_export
+105,South Bronx,uninsured,Health insurance type,25.8,2.806122448979592,20.7,31.7,2019,total,high,epiquery_export
+201,Greenpoint,uninsured,Health insurance type,54.6,5.076530612244899,44.5,64.4,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,uninsured,Health insurance type,51.8,4.617346938775509,42.7,60.8,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,uninsured,Health insurance type,37.9,3.3928571428571423,31.5,44.8,2019,total,high,epiquery_export
+204,East New York,uninsured,Health insurance type,43.8,5.255102040816327,33.8,54.4,2019,total,low,epiquery_export
+205,Sunset Park,uninsured,Health insurance type,27.2,4.923469387755102,18.6,37.9,2019,total,high,epiquery_export
+206,Borough Park,uninsured,Health insurance type,32.3,3.6989795918367347,25.5,40.0,2019,total,high,epiquery_export
+207,Flatbush,uninsured,Health insurance type,41.7,4.183673469387755,33.7,50.1,2019,total,high,epiquery_export
+208,Canarsie,uninsured,Health insurance type,51.6,5.17857142857143,41.4,61.7,2019,total,low,epiquery_export
+209,Bensonhurst,uninsured,Health insurance type,54.9,4.2857142857142865,46.4,63.2,2019,total,high,epiquery_export
+210,Coney Island,uninsured,Health insurance type,33.6,3.6989795918367356,26.7,41.2,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,uninsured,Health insurance type,42.2,4.719387755102041,33.2,51.7,2019,total,high,epiquery_export
+301,Washington Heights,uninsured,Health insurance type,40.3,4.438775510204081,31.9,49.3,2019,total,high,epiquery_export
+302,Central Harlem,uninsured,Health insurance type,36.8,5.229591836734694,27.1,47.6,2019,total,low,epiquery_export
+303,East Harlem,uninsured,Health insurance type,31.0,5.204081632653062,21.7,42.1,2019,total,low,epiquery_export
+304,Upper West Side,uninsured,Health insurance type,69.1,4.2857142857142865,60.1,76.9,2019,total,high,epiquery_export
+305,Upper East Side-Gramercy,uninsured,Health insurance type,71.3,3.1122448979591844,64.8,77.0,2019,total,high,epiquery_export
+306,Chelsea-Village,uninsured,Health insurance type,62.2,4.795918367346938,52.3,71.1,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,uninsured,Health insurance type,48.0,4.285714285714285,39.6,56.4,2019,total,high,epiquery_export
+401,"LIC, Astoria",uninsured,Health insurance type,52.0,5.127551020408164,41.8,61.9,2019,total,low,epiquery_export
+402,West Queens,uninsured,Health insurance type,35.6,3.5969387755102047,28.9,43.0,2019,total,high,epiquery_export
+403,Flushing,uninsured,Health insurance type,35.0,5.3571428571428585,25.2,46.2,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,uninsured,Health insurance type,60.7,5.459183673469389,49.5,70.9,2019,total,low,epiquery_export
+405,Ridgewood,uninsured,Health insurance type,56.1,4.566326530612247,47.0,64.9,2019,total,high,epiquery_export
+407,SouthWest Queens,uninsured,Health insurance type,41.7,3.9795918367346945,34.1,49.7,2019,total,high,epiquery_export
+408,Jamaica,uninsured,Health insurance type,38.2,4.591836734693878,29.6,47.6,2019,total,high,epiquery_export
+409,SouthEast Queens,uninsured,Health insurance type,45.7,5.688775510204083,34.8,57.1,2019,total,low,epiquery_export
+410,Rockaway,uninsured,Health insurance type,37.9,5.943877551020409,26.9,50.2,2019,total,low,epiquery_export
+501,Northern SI,uninsured,Health insurance type,53.9,5.204081632653061,43.5,63.9,2019,total,low,epiquery_export
+503,Southern SI,uninsured,Health insurance type,67.6,3.443877551020408,60.5,74.0,2019,total,high,epiquery_export
+101,Kingsbridge,uninsured,Health insurance type,14.3,2.3214285714285707,10.3,19.4,2019,total,high,epiquery_export
+102,NE Bronx,uninsured,Health insurance type,16.6,3.1632653061224487,11.3,23.7,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,uninsured,Health insurance type,13.2,2.346938775510204,9.3,18.5,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,uninsured,Health insurance type,18.5,2.806122448979592,13.7,24.7,2019,total,high,epiquery_export
+105,South Bronx,uninsured,Health insurance type,12.8,1.8367346938775513,9.6,16.8,2019,total,high,epiquery_export
+201,Greenpoint,uninsured,Health insurance type,12.8,3.086734693877551,7.9,20.0,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,uninsured,Health insurance type,14.4,2.270408163265306,10.5,19.4,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,uninsured,Health insurance type,17.1,2.7551020408163267,12.3,23.1,2019,total,high,epiquery_export
+204,East New York,uninsured,Health insurance type,9.3,2.678571428571429,5.3,15.8,2019,total,high,epiquery_export
+205,Sunset Park,uninsured,Health insurance type,14.8,4.923469387755102,7.6,26.9,2019,total,low,epiquery_export
+206,Borough Park,uninsured,Health insurance type,16.3,3.086734693877551,11.1,23.2,2019,total,high,epiquery_export
+207,Flatbush,uninsured,Health insurance type,14.5,2.5510204081632653,10.2,20.2,2019,total,high,epiquery_export
+208,Canarsie,uninsured,Health insurance type,20.7,2.831632653061225,15.7,26.8,2019,total,high,epiquery_export
+209,Bensonhurst,uninsured,Health insurance type,16.3,2.2448979591836733,12.4,21.2,2019,total,high,epiquery_export
+210,Coney Island,uninsured,Health insurance type,16.9,2.4489795918367347,12.6,22.2,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,uninsured,Health insurance type,16.5,3.622448979591837,10.6,24.8,2019,total,high,epiquery_export
+301,Washington Heights,uninsured,Health insurance type,12.5,1.7857142857142854,9.4,16.4,2019,total,high,epiquery_export
+302,Central Harlem,uninsured,Health insurance type,12.7,3.5969387755102047,7.2,21.3,2019,total,high,epiquery_export
+303,East Harlem,uninsured,Health insurance type,17.3,4.183673469387755,10.6,27.0,2019,total,high,epiquery_export
+304,Upper West Side,uninsured,Health insurance type,14.8,1.0969387755102042,12.8,17.1,2019,total,high,epiquery_export
+305,Upper East Side-Gramercy,uninsured,Health insurance type,13.6,1.0969387755102042,11.6,15.9,2019,total,high,epiquery_export
+306,Chelsea-Village,uninsured,Health insurance type,14.8,2.602040816326531,10.4,20.6,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,uninsured,Health insurance type,12.6,2.678571428571429,8.3,18.8,2019,total,high,epiquery_export
+401,"LIC, Astoria",uninsured,Health insurance type,15.3,3.520408163265306,9.6,23.4,2019,total,high,epiquery_export
+402,West Queens,uninsured,Health insurance type,14.1,2.0663265306122454,10.5,18.6,2019,total,high,epiquery_export
+403,Flushing,uninsured,Health insurance type,18.0,2.372448979591837,13.8,23.1,2019,total,high,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,uninsured,Health insurance type,17.2,4.387755102040816,10.3,27.5,2019,total,high,epiquery_export
+405,Ridgewood,uninsured,Health insurance type,12.9,2.040816326530612,9.4,17.4,2019,total,high,epiquery_export
+407,SouthWest Queens,uninsured,Health insurance type,14.6,1.683673469387755,11.6,18.2,2019,total,high,epiquery_export
+408,Jamaica,uninsured,Health insurance type,12.8,2.4744897959183674,8.7,18.4,2019,total,high,epiquery_export
+409,SouthEast Queens,uninsured,Health insurance type,23.7,4.923469387755103,15.3,34.6,2019,total,high,epiquery_export
+410,Rockaway,uninsured,Health insurance type,24.7,5.17857142857143,15.9,36.2,2019,total,low,epiquery_export
+501,Northern SI,uninsured,Health insurance type,13.7,3.5969387755102042,8.1,22.2,2019,total,high,epiquery_export
+503,Southern SI,uninsured,Health insurance type,16.0,2.6530612244897958,11.5,21.9,2019,total,high,epiquery_export
+101,Kingsbridge,uninsured,Health insurance type,17.5,4.438775510204081,10.4,27.8,2019,total,high,epiquery_export
+102,NE Bronx,uninsured,Health insurance type,23.4,4.413265306122449,15.8,33.1,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,uninsured,Health insurance type,32.0,4.387755102040817,24.0,41.2,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,uninsured,Health insurance type,32.5,3.6479591836734695,25.8,40.1,2019,total,high,epiquery_export
+105,South Bronx,uninsured,Health insurance type,37.7,3.1632653061224496,31.7,44.1,2019,total,high,epiquery_export
+201,Greenpoint,uninsured,Health insurance type,23.1,4.744897959183674,15.1,33.7,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,uninsured,Health insurance type,13.2,2.9591836734693877,8.4,20.0,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,uninsured,Health insurance type,30.9,3.852040816326531,23.9,39.0,2019,total,high,epiquery_export
+204,East New York,uninsured,Health insurance type,27.2,4.617346938775511,19.1,37.2,2019,total,high,epiquery_export
+205,Sunset Park,uninsured,Health insurance type,35.8,5.025510204081633,26.5,46.2,2019,total,high,epiquery_export
+206,Borough Park,uninsured,Health insurance type,36.7,3.979591836734693,29.3,44.9,2019,total,high,epiquery_export
+207,Flatbush,uninsured,Health insurance type,22.0,3.596938775510204,15.8,29.9,2019,total,high,epiquery_export
+208,Canarsie,uninsured,Health insurance type,22.1,4.5153061224489806,14.5,32.2,2019,total,high,epiquery_export
+209,Bensonhurst,uninsured,Health insurance type,18.4,3.341836734693878,12.7,25.8,2019,total,high,epiquery_export
+210,Coney Island,uninsured,Health insurance type,39.6,3.826530612244898,32.3,47.3,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,uninsured,Health insurance type,18.7,3.341836734693878,13.0,26.1,2019,total,high,epiquery_export
+301,Washington Heights,uninsured,Health insurance type,27.3,4.285714285714286,19.7,36.5,2019,total,high,epiquery_export
+302,Central Harlem,uninsured,Health insurance type,28.0,5.586734693877551,18.4,40.3,2019,total,low,epiquery_export
+303,East Harlem,uninsured,Health insurance type,43.1,5.790816326530611,32.1,54.8,2019,total,low,epiquery_export
+304,Upper West Side,uninsured,Health insurance type,8.2,3.8520408163265305,3.4,18.5,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,uninsured,Health insurance type,8.8,2.372448979591837,5.2,14.5,2019,total,high,epiquery_export
+306,Chelsea-Village,uninsured,Health insurance type,5.7,2.0408163265306123,2.9,10.9,2019,total,low,epiquery_export
+309,Union Square-Lower Manhattan,uninsured,Health insurance type,28.9,4.591836734693879,20.7,38.7,2019,total,high,epiquery_export
+401,"LIC, Astoria",uninsured,Health insurance type,17.1,3.8010204081632653,10.9,25.8,2019,total,high,epiquery_export
+402,West Queens,uninsured,Health insurance type,20.3,3.1122448979591835,14.8,27.0,2019,total,high,epiquery_export
+403,Flushing,uninsured,Health insurance type,34.8,5.357142857142858,25.0,46.0,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,uninsured,Health insurance type,12.0,3.137755102040816,7.1,19.4,2019,total,high,epiquery_export
+405,Ridgewood,uninsured,Health insurance type,13.7,3.5204081632653064,8.2,22.0,2019,total,high,epiquery_export
+407,SouthWest Queens,uninsured,Health insurance type,28.9,4.005102040816326,21.7,37.4,2019,total,high,epiquery_export
+408,Jamaica,uninsured,Health insurance type,27.5,4.209183673469388,20.0,36.5,2019,total,high,epiquery_export
+409,SouthEast Queens,uninsured,Health insurance type,9.8,3.2397959183673466,5.2,17.9,2019,total,low,epiquery_export
+410,Rockaway,uninsured,Health insurance type,24.3,4.234693877551021,17.0,33.6,2019,total,high,epiquery_export
+501,Northern SI,uninsured,Health insurance type,22.2,4.2602040816326525,15.0,31.7,2019,total,high,epiquery_export
+503,Southern SI,uninsured,Health insurance type,8.5,2.0663265306122454,5.3,13.4,2019,total,high,epiquery_export
+102,NE Bronx,uninsured,Health insurance type,3.5,1.403061224489796,1.7,7.2,2019,total,low,epiquery_export
+103,Fordham-Bronx Pk,uninsured,Health insurance type,3.6,1.683673469387755,1.6,8.2,2019,total,low,epiquery_export
+104,Pelham-Throgs Neck,uninsured,Health insurance type,3.9,1.862244897959184,1.6,8.9,2019,total,low,epiquery_export
+105,South Bronx,uninsured,Health insurance type,3.8,1.326530612244898,2.0,7.2,2019,total,low,epiquery_export
+202,Downtown-Heights-Slope,uninsured,Health insurance type,6.5,2.6020408163265305,3.0,13.2,2019,total,low,epiquery_export
+203,Bed Stuy-Crown Heights,uninsured,Health insurance type,4.7,1.5816326530612244,2.5,8.7,2019,total,low,epiquery_export
+204,East New York,uninsured,Health insurance type,5.3,2.5510204081632653,2.2,12.2,2019,total,low,epiquery_export
+207,Flatbush,uninsured,Health insurance type,5.0,2.1428571428571423,2.3,10.7,2019,total,low,epiquery_export
+208,Canarsie,uninsured,Health insurance type,0.9,0.9438775510204082,0.2,3.9,2019,total,low,epiquery_export
+209,Bensonhurst,uninsured,Health insurance type,0.8,0.6632653061224489,0.2,2.8,2019,total,low,epiquery_export
+210,Coney Island,uninsured,Health insurance type,1.5,0.7142857142857143,0.6,3.4,2019,total,low,epiquery_export
+211,Williamsburg-Bushwk,uninsured,Health insurance type,5.3,2.729591836734694,2.1,12.8,2019,total,low,epiquery_export
+301,Washington Heights,uninsured,Health insurance type,3.2,1.3775510204081634,1.5,6.9,2019,total,low,epiquery_export
+302,Central Harlem,uninsured,Health insurance type,7.4,3.4948979591836737,3.1,16.8,2019,total,low,epiquery_export
+304,Upper West Side,uninsured,Health insurance type,5.5,2.321428571428571,2.5,11.6,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,uninsured,Health insurance type,2.0,1.0714285714285714,0.8,5.0,2019,total,low,epiquery_export
+306,Chelsea-Village,uninsured,Health insurance type,5.6,2.2193877551020407,2.7,11.4,2019,total,low,epiquery_export
+309,Union Square-Lower Manhattan,uninsured,Health insurance type,0.8,0.5357142857142857,0.3,2.4,2019,total,low,epiquery_export
+401,"LIC, Astoria",uninsured,Health insurance type,8.5,3.545918367346939,3.9,17.8,2019,total,low,epiquery_export
+402,West Queens,uninsured,Health insurance type,4.3,1.4285714285714288,2.3,7.9,2019,total,low,epiquery_export
+403,Flushing,uninsured,Health insurance type,0.1,0.20408163265306123,0.0,0.8,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,uninsured,Health insurance type,1.9,0.8673469387755103,0.8,4.2,2019,total,low,epiquery_export
+405,Ridgewood,uninsured,Health insurance type,6.0,2.295918367346939,2.9,11.9,2019,total,low,epiquery_export
+407,SouthWest Queens,uninsured,Health insurance type,1.5,0.8673469387755102,0.5,3.9,2019,total,low,epiquery_export
+408,Jamaica,uninsured,Health insurance type,4.0,1.6326530612244898,1.9,8.3,2019,total,low,epiquery_export
+409,SouthEast Queens,uninsured,Health insurance type,8.8,3.5969387755102047,4.0,18.1,2019,total,low,epiquery_export
+410,Rockaway,uninsured,Health insurance type,0.8,0.7908163265306122,0.2,3.3,2019,total,low,epiquery_export
+501,Northern SI,uninsured,Health insurance type,2.0,1.4285714285714288,0.6,6.2,2019,total,low,epiquery_export
+503,Southern SI,uninsured,Health insurance type,3.9,1.4540816326530612,2.0,7.7,2019,total,low,epiquery_export
+101,Kingsbridge,uninsured,Health insurance type,2.9,1.4795918367346939,1.2,7.0,2019,total,low,epiquery_export
+102,NE Bronx,uninsured,Health insurance type,8.4,2.7551020408163267,4.5,15.3,2019,total,low,epiquery_export
+103,Fordham-Bronx Pk,uninsured,Health insurance type,27.9,3.9540816326530606,20.8,36.3,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,uninsured,Health insurance type,9.7,2.806122448979592,5.5,16.5,2019,total,high,epiquery_export
+105,South Bronx,uninsured,Health insurance type,19.8,2.7295918367346936,15.0,25.7,2019,total,high,epiquery_export
+201,Greenpoint,uninsured,Health insurance type,7.7,2.372448979591837,4.3,13.6,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,uninsured,Health insurance type,14.1,4.183673469387755,7.8,24.2,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,uninsured,Health insurance type,9.3,2.5000000000000004,5.5,15.3,2019,total,high,epiquery_export
+204,East New York,uninsured,Health insurance type,14.4,4.438775510204081,7.8,25.2,2019,total,low,epiquery_export
+205,Sunset Park,uninsured,Health insurance type,15.7,3.75,9.7,24.4,2019,total,high,epiquery_export
+206,Borough Park,uninsured,Health insurance type,11.6,2.7806122448979598,7.2,18.1,2019,total,high,epiquery_export
+207,Flatbush,uninsured,Health insurance type,16.8,3.418367346938776,11.1,24.5,2019,total,high,epiquery_export
+208,Canarsie,uninsured,Health insurance type,4.7,2.576530612244898,1.8,11.9,2019,total,low,epiquery_export
+209,Bensonhurst,uninsured,Health insurance type,9.6,2.806122448979592,5.5,16.5,2019,total,high,epiquery_export
+210,Coney Island,uninsured,Health insurance type,8.5,2.6020408163265305,4.7,14.9,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,uninsured,Health insurance type,17.2,4.438775510204082,10.2,27.6,2019,total,high,epiquery_export
+301,Washington Heights,uninsured,Health insurance type,16.7,3.6479591836734695,10.7,25.0,2019,total,high,epiquery_export
+302,Central Harlem,uninsured,Health insurance type,15.1,4.362244897959184,8.4,25.5,2019,total,high,epiquery_export
+303,East Harlem,uninsured,Health insurance type,5.9,2.7295918367346936,2.5,13.2,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,uninsured,Health insurance type,4.4,1.9387755102040816,2.0,9.6,2019,total,low,epiquery_export
+306,Chelsea-Village,uninsured,Health insurance type,11.7,4.005102040816326,6.0,21.7,2019,total,low,epiquery_export
+309,Union Square-Lower Manhattan,uninsured,Health insurance type,9.7,2.729591836734694,5.6,16.3,2019,total,high,epiquery_export
+401,"LIC, Astoria",uninsured,Health insurance type,7.1,2.5255102040816326,3.6,13.5,2019,total,low,epiquery_export
+402,West Queens,uninsured,Health insurance type,25.7,3.2653061224489797,19.8,32.6,2019,total,high,epiquery_export
+403,Flushing,uninsured,Health insurance type,12.1,3.954081632653061,6.4,21.9,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,uninsured,Health insurance type,8.2,3.979591836734693,3.3,18.9,2019,total,low,epiquery_export
+405,Ridgewood,uninsured,Health insurance type,11.3,2.88265306122449,6.8,18.1,2019,total,high,epiquery_export
+407,SouthWest Queens,uninsured,Health insurance type,13.3,2.831632653061225,8.7,19.8,2019,total,high,epiquery_export
+408,Jamaica,uninsured,Health insurance type,17.5,4.056122448979592,10.9,26.8,2019,total,high,epiquery_export
+409,SouthEast Queens,uninsured,Health insurance type,12.1,4.821428571428571,5.5,24.4,2019,total,low,epiquery_export
+410,Rockaway,uninsured,Health insurance type,12.3,5.9438775510204085,4.8,28.1,2019,total,low,epiquery_export
+501,Northern SI,uninsured,Health insurance type,8.2,2.933673469387755,4.1,15.6,2019,total,low,epiquery_export
+503,Southern SI,uninsured,Health insurance type,3.9,1.709183673469388,1.8,8.5,2019,total,low,epiquery_export
+101,Kingsbridge,fluvax,Influenza (flu) vaccination,51.9,5.153061224489795,41.7,61.9,2019,total,low,epiquery_export
+102,NE Bronx,fluvax,Influenza (flu) vaccination,38.4,4.464285714285714,30.0,47.5,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,fluvax,Influenza (flu) vaccination,55.2,4.719387755102041,45.7,64.2,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,fluvax,Influenza (flu) vaccination,50.5,3.903061224489797,42.9,58.2,2019,total,high,epiquery_export
+105,South Bronx,fluvax,Influenza (flu) vaccination,52.7,3.188775510204082,46.4,58.9,2019,total,high,epiquery_export
+201,Greenpoint,fluvax,Influenza (flu) vaccination,34.2,5.178571428571429,24.8,45.1,2019,total,low,epiquery_export
+202,Downtown-Heights-Slope,fluvax,Influenza (flu) vaccination,54.8,4.285714285714285,46.2,63.0,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,fluvax,Influenza (flu) vaccination,41.9,3.6224489795918373,35.0,49.2,2019,total,high,epiquery_export
+204,East New York,fluvax,Influenza (flu) vaccination,44.6,4.974489795918368,35.0,54.5,2019,total,high,epiquery_export
+205,Sunset Park,fluvax,Influenza (flu) vaccination,37.7,5.892857142857142,26.8,49.9,2019,total,low,epiquery_export
+206,Borough Park,fluvax,Influenza (flu) vaccination,43.5,3.9285714285714284,35.9,51.3,2019,total,high,epiquery_export
+207,Flatbush,fluvax,Influenza (flu) vaccination,48.7,4.209183673469388,40.5,57.0,2019,total,high,epiquery_export
+208,Canarsie,fluvax,Influenza (flu) vaccination,52.7,5.357142857142858,42.1,63.1,2019,total,low,epiquery_export
+209,Bensonhurst,fluvax,Influenza (flu) vaccination,47.3,4.413265306122448,38.7,56.0,2019,total,high,epiquery_export
+210,Coney Island,fluvax,Influenza (flu) vaccination,37.3,4.132653061224489,29.6,45.8,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,fluvax,Influenza (flu) vaccination,36.2,5.10204081632653,26.8,46.8,2019,total,high,epiquery_export
+301,Washington Heights,fluvax,Influenza (flu) vaccination,56.1,4.540816326530612,47.0,64.8,2019,total,high,epiquery_export
+302,Central Harlem,fluvax,Influenza (flu) vaccination,48.9,5.357142857142858,38.5,59.5,2019,total,low,epiquery_export
+303,East Harlem,fluvax,Influenza (flu) vaccination,49.0,6.25,36.8,61.3,2019,total,low,epiquery_export
+304,Upper West Side,fluvax,Influenza (flu) vaccination,61.3,5.382653061224488,50.2,71.3,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,fluvax,Influenza (flu) vaccination,59.0,3.877551020408164,51.2,66.4,2019,total,high,epiquery_export
+306,Chelsea-Village,fluvax,Influenza (flu) vaccination,46.8,4.387755102040817,38.3,55.5,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,fluvax,Influenza (flu) vaccination,56.8,4.05612244897959,48.7,64.6,2019,total,high,epiquery_export
+401,"LIC, Astoria",fluvax,Influenza (flu) vaccination,51.3,4.948979591836735,41.6,61.0,2019,total,high,epiquery_export
+402,West Queens,fluvax,Influenza (flu) vaccination,49.0,3.903061224489797,41.3,56.6,2019,total,high,epiquery_export
+403,Flushing,fluvax,Influenza (flu) vaccination,47.8,5.459183673469387,37.2,58.6,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,fluvax,Influenza (flu) vaccination,56.2,5.739795918367345,44.6,67.1,2019,total,low,epiquery_export
+405,Ridgewood,fluvax,Influenza (flu) vaccination,50.7,4.3112244897959195,42.3,59.2,2019,total,high,epiquery_export
+407,SouthWest Queens,fluvax,Influenza (flu) vaccination,49.3,4.158163265306122,41.2,57.5,2019,total,high,epiquery_export
+408,Jamaica,fluvax,Influenza (flu) vaccination,41.9,4.5153061224489806,33.3,51.0,2019,total,high,epiquery_export
+409,SouthEast Queens,fluvax,Influenza (flu) vaccination,49.5,5.459183673469389,38.8,60.2,2019,total,low,epiquery_export
+410,Rockaway,fluvax,Influenza (flu) vaccination,51.9,5.663265306122448,40.7,62.9,2019,total,low,epiquery_export
+501,Northern SI,fluvax,Influenza (flu) vaccination,44.1,5.229591836734694,34.1,54.6,2019,total,low,epiquery_export
+503,Southern SI,fluvax,Influenza (flu) vaccination,40.1,4.285714285714285,32.0,48.8,2019,total,high,epiquery_export
+101,Kingsbridge,smoking,Smoking status,63.8,5.612244897959182,52.1,74.1,2019,total,low,epiquery_export
+102,NE Bronx,smoking,Smoking status,77.3,3.5459183673469403,69.6,83.5,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,smoking,Smoking status,68.3,4.285714285714285,59.3,76.1,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,smoking,Smoking status,64.5,3.418367346938777,57.5,70.9,2019,total,high,epiquery_export
+105,South Bronx,smoking,Smoking status,70.1,3.0357142857142874,63.8,75.7,2019,total,high,epiquery_export
+201,Greenpoint,smoking,Smoking status,72.0,4.8724489795918355,61.5,80.6,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,smoking,Smoking status,66.6,3.724489795918368,58.9,73.5,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,smoking,Smoking status,69.4,3.418367346938777,62.3,75.7,2019,total,high,epiquery_export
+204,East New York,smoking,Smoking status,75.3,4.515306122448977,65.4,83.1,2019,total,high,epiquery_export
+205,Sunset Park,smoking,Smoking status,59.9,5.943877551020408,47.7,71.0,2019,total,low,epiquery_export
+206,Borough Park,smoking,Smoking status,77.6,3.3928571428571423,70.2,83.5,2019,total,high,epiquery_export
+207,Flatbush,smoking,Smoking status,86.7,2.4489795918367334,81.2,90.8,2019,total,high,epiquery_export
+208,Canarsie,smoking,Smoking status,78.4,4.005102040816327,69.5,85.2,2019,total,high,epiquery_export
+209,Bensonhurst,smoking,Smoking status,66.0,3.903061224489797,57.9,73.2,2019,total,high,epiquery_export
+210,Coney Island,smoking,Smoking status,62.0,4.311224489795916,53.2,70.1,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,smoking,Smoking status,63.4,5.025510204081633,53.0,72.7,2019,total,high,epiquery_export
+301,Washington Heights,smoking,Smoking status,76.2,3.750000000000001,68.1,82.8,2019,total,high,epiquery_export
+302,Central Harlem,smoking,Smoking status,69.1,5.127551020408164,58.1,78.2,2019,total,low,epiquery_export
+303,East Harlem,smoking,Smoking status,53.3,5.688775510204081,42.0,64.3,2019,total,low,epiquery_export
+304,Upper West Side,smoking,Smoking status,66.6,5.331632653061226,55.3,76.2,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,smoking,Smoking status,63.8,3.775510204081634,56.1,70.9,2019,total,high,epiquery_export
+306,Chelsea-Village,smoking,Smoking status,65.5,4.464285714285714,56.2,73.7,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,smoking,Smoking status,66.8,4.158163265306124,58.1,74.4,2019,total,high,epiquery_export
+401,"LIC, Astoria",smoking,Smoking status,67.9,4.2857142857142865,58.9,75.7,2019,total,high,epiquery_export
+402,West Queens,smoking,Smoking status,75.5,3.0357142857142874,69.1,81.0,2019,total,high,epiquery_export
+403,Flushing,smoking,Smoking status,70.7,5.076530612244899,59.8,79.7,2019,total,high,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,smoking,Smoking status,64.4,5.459183673469389,53.0,74.4,2019,total,low,epiquery_export
+405,Ridgewood,smoking,Smoking status,64.2,3.826530612244898,56.3,71.3,2019,total,high,epiquery_export
+407,SouthWest Queens,smoking,Smoking status,62.7,4.030612244897958,54.5,70.3,2019,total,high,epiquery_export
+408,Jamaica,smoking,Smoking status,77.2,3.6734693877551,69.2,83.6,2019,total,high,epiquery_export
+409,SouthEast Queens,smoking,Smoking status,83.5,3.9285714285714266,74.4,89.8,2019,total,high,epiquery_export
+410,Rockaway,smoking,Smoking status,52.7,6.377551020408164,40.0,65.0,2019,total,low,epiquery_export
+501,Northern SI,smoking,Smoking status,60.2,4.846938775510204,50.3,69.3,2019,total,high,epiquery_export
+503,Southern SI,smoking,Smoking status,55.8,4.183673469387755,47.4,63.8,2019,total,high,epiquery_export
+101,Kingsbridge,smoking,Smoking status,9.5,4.005102040816326,4.2,19.9,2019,total,low,epiquery_export
+102,NE Bronx,smoking,Smoking status,8.7,2.5510204081632653,4.9,14.9,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,smoking,Smoking status,16.3,3.9540816326530615,10.0,25.5,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,smoking,Smoking status,17.8,2.933673469387755,12.8,24.3,2019,total,high,epiquery_export
+105,South Bronx,smoking,Smoking status,20.6,2.8571428571428577,15.6,26.8,2019,total,high,epiquery_export
+201,Greenpoint,smoking,Smoking status,10.1,3.6479591836734695,5.0,19.3,2019,total,low,epiquery_export
+202,Downtown-Heights-Slope,smoking,Smoking status,8.8,1.8622448979591837,5.8,13.1,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,smoking,Smoking status,15.3,2.8061224489795924,10.6,21.6,2019,total,high,epiquery_export
+204,East New York,smoking,Smoking status,10.5,3.1632653061224487,5.8,18.2,2019,total,high,epiquery_export
+205,Sunset Park,smoking,Smoking status,20.5,6.045918367346938,11.1,34.8,2019,total,low,epiquery_export
+206,Borough Park,smoking,Smoking status,5.3,1.4540816326530612,3.2,8.9,2019,total,high,epiquery_export
+207,Flatbush,smoking,Smoking status,4.9,1.3010204081632653,3.0,8.1,2019,total,high,epiquery_export
+208,Canarsie,smoking,Smoking status,9.6,3.214285714285715,5.0,17.6,2019,total,low,epiquery_export
+209,Bensonhurst,smoking,Smoking status,10.0,2.7551020408163267,5.8,16.6,2019,total,high,epiquery_export
+210,Coney Island,smoking,Smoking status,15.6,3.5714285714285716,9.8,23.8,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,smoking,Smoking status,22.2,4.413265306122449,14.7,32.0,2019,total,high,epiquery_export
+301,Washington Heights,smoking,Smoking status,8.7,2.8571428571428577,4.6,15.8,2019,total,low,epiquery_export
+302,Central Harlem,smoking,Smoking status,13.0,3.724489795918367,7.3,21.9,2019,total,high,epiquery_export
+303,East Harlem,smoking,Smoking status,26.1,5.9183673469387745,16.1,39.3,2019,total,low,epiquery_export
+304,Upper West Side,smoking,Smoking status,6.3,2.3979591836734695,3.1,12.5,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,smoking,Smoking status,8.5,2.0918367346938775,5.3,13.5,2019,total,high,epiquery_export
+306,Chelsea-Village,smoking,Smoking status,7.8,2.704081632653061,4.0,14.6,2019,total,low,epiquery_export
+309,Union Square-Lower Manhattan,smoking,Smoking status,6.9,2.0408163265306123,3.9,11.9,2019,total,high,epiquery_export
+401,"LIC, Astoria",smoking,Smoking status,11.0,2.678571428571429,6.8,17.3,2019,total,high,epiquery_export
+402,West Queens,smoking,Smoking status,7.8,1.9132653061224492,4.8,12.3,2019,total,high,epiquery_export
+403,Flushing,smoking,Smoking status,12.3,3.9795918367346945,6.5,22.1,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,smoking,Smoking status,8.2,2.653061224489796,4.4,14.8,2019,total,low,epiquery_export
+405,Ridgewood,smoking,Smoking status,9.0,2.806122448979592,4.9,15.9,2019,total,low,epiquery_export
+407,SouthWest Queens,smoking,Smoking status,12.3,2.6530612244897958,8.0,18.4,2019,total,high,epiquery_export
+408,Jamaica,smoking,Smoking status,12.0,3.1122448979591835,7.2,19.4,2019,total,high,epiquery_export
+409,SouthEast Queens,smoking,Smoking status,8.8,3.4183673469387763,4.2,17.6,2019,total,low,epiquery_export
+410,Rockaway,smoking,Smoking status,18.1,5.229591836734694,10.0,30.5,2019,total,low,epiquery_export
+501,Northern SI,smoking,Smoking status,19.4,4.413265306122449,12.2,29.5,2019,total,high,epiquery_export
+503,Southern SI,smoking,Smoking status,15.2,3.290816326530612,9.8,22.7,2019,total,high,epiquery_export
+101,Kingsbridge,smoking,Smoking status,26.7,5.127551020408163,17.8,37.9,2019,total,low,epiquery_export
+102,NE Bronx,smoking,Smoking status,14.1,3.035714285714286,9.1,21.0,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,smoking,Smoking status,15.4,3.010204081632653,10.4,22.2,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,smoking,Smoking status,17.7,2.5765306122448983,13.2,23.3,2019,total,high,epiquery_export
+105,South Bronx,smoking,Smoking status,9.3,1.683673469387755,6.5,13.1,2019,total,high,epiquery_export
+201,Greenpoint,smoking,Smoking status,17.9,3.4948979591836737,12.1,25.8,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,smoking,Smoking status,24.6,3.494897959183674,18.4,32.1,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,smoking,Smoking status,15.3,2.6530612244897958,10.8,21.2,2019,total,high,epiquery_export
+204,East New York,smoking,Smoking status,14.2,3.6479591836734695,8.5,22.8,2019,total,high,epiquery_export
+205,Sunset Park,smoking,Smoking status,19.6,5.433673469387754,11.1,32.4,2019,total,low,epiquery_export
+206,Borough Park,smoking,Smoking status,17.1,3.2397959183673466,11.7,24.4,2019,total,high,epiquery_export
+207,Flatbush,smoking,Smoking status,8.3,2.1683673469387754,5.0,13.5,2019,total,high,epiquery_export
+208,Canarsie,smoking,Smoking status,12.0,2.984693877551021,7.4,19.1,2019,total,high,epiquery_export
+209,Bensonhurst,smoking,Smoking status,24.1,3.494897959183674,17.9,31.6,2019,total,high,epiquery_export
+210,Coney Island,smoking,Smoking status,22.4,3.6734693877551017,16.0,30.4,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,smoking,Smoking status,14.4,3.265306122448979,9.1,21.9,2019,total,high,epiquery_export
+301,Washington Heights,smoking,Smoking status,15.1,2.704081632653061,10.6,21.2,2019,total,high,epiquery_export
+302,Central Harlem,smoking,Smoking status,17.9,4.107142857142857,11.3,27.4,2019,total,high,epiquery_export
+303,East Harlem,smoking,Smoking status,20.6,5.178571428571429,12.2,32.5,2019,total,low,epiquery_export
+304,Upper West Side,smoking,Smoking status,27.2,5.255102040816327,18.1,38.7,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,smoking,Smoking status,27.7,3.596938775510204,21.2,35.3,2019,total,high,epiquery_export
+306,Chelsea-Village,smoking,Smoking status,26.7,3.9540816326530623,19.7,35.2,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,smoking,Smoking status,26.3,3.9540816326530606,19.3,34.8,2019,total,high,epiquery_export
+401,"LIC, Astoria",smoking,Smoking status,21.1,3.979591836734693,14.3,29.9,2019,total,high,epiquery_export
+402,West Queens,smoking,Smoking status,16.8,2.704081632653061,12.1,22.7,2019,total,high,epiquery_export
+403,Flushing,smoking,Smoking status,17.0,3.801020408163265,10.8,25.7,2019,total,high,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,smoking,Smoking status,27.4,5.3316326530612255,18.2,39.1,2019,total,low,epiquery_export
+405,Ridgewood,smoking,Smoking status,26.9,3.239795918367348,21.0,33.7,2019,total,high,epiquery_export
+407,SouthWest Queens,smoking,Smoking status,25.0,3.801020408163266,18.3,33.2,2019,total,high,epiquery_export
+408,Jamaica,smoking,Smoking status,10.8,2.2448979591836737,7.2,16.0,2019,total,high,epiquery_export
+409,SouthEast Queens,smoking,Smoking status,7.7,2.576530612244898,4.0,14.1,2019,total,low,epiquery_export
+410,Rockaway,smoking,Smoking status,29.2,4.464285714285715,21.2,38.7,2019,total,high,epiquery_export
+501,Northern SI,smoking,Smoking status,20.4,4.387755102040817,13.1,30.3,2019,total,high,epiquery_export
+503,Southern SI,smoking,Smoking status,29.1,3.9285714285714284,22.0,37.4,2019,total,high,epiquery_export
+101,Kingsbridge,binge,Binge drinking,22.6,5.943877551020408,13.0,36.3,2019,total,low,epiquery_export
+102,NE Bronx,binge,Binge drinking,20.3,4.209183673469388,13.3,29.8,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,binge,Binge drinking,21.4,4.183673469387755,14.3,30.7,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,binge,Binge drinking,15.2,2.7806122448979593,10.6,21.5,2019,total,high,epiquery_export
+105,South Bronx,binge,Binge drinking,18.5,2.5765306122448983,14.0,24.1,2019,total,high,epiquery_export
+201,Greenpoint,binge,Binge drinking,29.4,4.744897959183674,20.9,39.5,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,binge,Binge drinking,26.8,3.6734693877551026,20.2,34.6,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,binge,Binge drinking,22.1,3.239795918367348,16.4,29.1,2019,total,high,epiquery_export
+204,East New York,binge,Binge drinking,11.0,3.1122448979591835,6.3,18.5,2019,total,high,epiquery_export
+205,Sunset Park,binge,Binge drinking,21.3,4.948979591836736,13.2,32.6,2019,total,high,epiquery_export
+206,Borough Park,binge,Binge drinking,12.9,2.7551020408163263,8.4,19.2,2019,total,high,epiquery_export
+207,Flatbush,binge,Binge drinking,12.4,2.8316326530612246,7.9,19.0,2019,total,high,epiquery_export
+208,Canarsie,binge,Binge drinking,9.8,3.5714285714285716,4.8,18.8,2019,total,low,epiquery_export
+209,Bensonhurst,binge,Binge drinking,14.2,3.2653061224489797,9.0,21.8,2019,total,high,epiquery_export
+210,Coney Island,binge,Binge drinking,12.1,2.984693877551021,7.4,19.1,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,binge,Binge drinking,26.9,4.566326530612245,18.9,36.8,2019,total,high,epiquery_export
+301,Washington Heights,binge,Binge drinking,23.2,3.9285714285714293,16.4,31.8,2019,total,high,epiquery_export
+302,Central Harlem,binge,Binge drinking,22.8,4.693877551020408,14.9,33.3,2019,total,high,epiquery_export
+303,East Harlem,binge,Binge drinking,12.4,3.9030612244897958,6.6,21.9,2019,total,low,epiquery_export
+304,Upper West Side,binge,Binge drinking,27.9,4.948979591836736,19.2,38.6,2019,total,high,epiquery_export
+305,Upper East Side-Gramercy,binge,Binge drinking,32.7,3.4948979591836733,26.2,39.9,2019,total,high,epiquery_export
+306,Chelsea-Village,binge,Binge drinking,22.9,3.5459183673469394,16.7,30.6,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,binge,Binge drinking,22.0,3.1377551020408165,16.4,28.7,2019,total,high,epiquery_export
+401,"LIC, Astoria",binge,Binge drinking,14.0,3.545918367346939,8.4,22.3,2019,total,high,epiquery_export
+402,West Queens,binge,Binge drinking,15.0,2.423469387755102,10.8,20.3,2019,total,high,epiquery_export
+403,Flushing,binge,Binge drinking,11.9,3.9540816326530615,6.2,21.7,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,binge,Binge drinking,10.7,2.857142857142857,6.3,17.5,2019,total,high,epiquery_export
+405,Ridgewood,binge,Binge drinking,12.4,2.5765306122448983,8.2,18.3,2019,total,high,epiquery_export
+407,SouthWest Queens,binge,Binge drinking,19.7,3.5969387755102042,13.6,27.7,2019,total,high,epiquery_export
+408,Jamaica,binge,Binge drinking,16.2,3.8265306122448983,10.1,25.1,2019,total,high,epiquery_export
+409,SouthEast Queens,binge,Binge drinking,13.5,4.158163265306123,7.3,23.6,2019,total,low,epiquery_export
+410,Rockaway,binge,Binge drinking,23.7,5.739795918367346,14.3,36.8,2019,total,low,epiquery_export
+501,Northern SI,binge,Binge drinking,20.8,4.209183673469388,13.7,30.2,2019,total,high,epiquery_export
+503,Southern SI,binge,Binge drinking,17.5,3.36734693877551,11.8,25.0,2019,total,high,epiquery_export
+101,Kingsbridge,obesity,Overweight and obesity,49.4,6.122448979591836,37.5,61.5,2019,total,low,epiquery_export
+102,NE Bronx,obesity,Overweight and obesity,31.4,4.693877551020408,22.9,41.3,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,obesity,Overweight and obesity,26.8,4.081632653061225,19.5,35.5,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,obesity,Overweight and obesity,33.8,3.6734693877551017,27.0,41.4,2019,total,high,epiquery_export
+105,South Bronx,obesity,Overweight and obesity,34.0,3.1377551020408156,28.1,40.4,2019,total,high,epiquery_export
+201,Greenpoint,obesity,Overweight and obesity,57.6,6.275510204081635,44.8,69.4,2019,total,low,epiquery_export
+202,Downtown-Heights-Slope,obesity,Overweight and obesity,48.3,4.0561224489795915,40.4,56.3,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,obesity,Overweight and obesity,36.1,3.3928571428571432,29.7,43.0,2019,total,high,epiquery_export
+204,East New York,obesity,Overweight and obesity,29.3,5.076530612244897,20.4,40.3,2019,total,high,epiquery_export
+205,Sunset Park,obesity,Overweight and obesity,59.3,5.688775510204081,47.7,70.0,2019,total,low,epiquery_export
+206,Borough Park,obesity,Overweight and obesity,40.5,4.183673469387755,32.6,49.0,2019,total,high,epiquery_export
+207,Flatbush,obesity,Overweight and obesity,42.2,4.183673469387755,34.2,50.6,2019,total,high,epiquery_export
+208,Canarsie,obesity,Overweight and obesity,29.3,4.540816326530613,21.2,39.0,2019,total,high,epiquery_export
+209,Bensonhurst,obesity,Overweight and obesity,43.5,4.260204081632654,35.4,52.1,2019,total,high,epiquery_export
+210,Coney Island,obesity,Overweight and obesity,43.3,4.311224489795918,35.0,51.9,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,obesity,Overweight and obesity,36.4,4.872448979591837,27.4,46.5,2019,total,high,epiquery_export
+301,Washington Heights,obesity,Overweight and obesity,35.5,4.4642857142857135,27.3,44.8,2019,total,high,epiquery_export
+302,Central Harlem,obesity,Overweight and obesity,32.1,4.974489795918368,23.1,42.6,2019,total,high,epiquery_export
+303,East Harlem,obesity,Overweight and obesity,29.0,5.229591836734693,19.8,40.3,2019,total,low,epiquery_export
+304,Upper West Side,obesity,Overweight and obesity,55.5,5.688775510204083,44.1,66.4,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,obesity,Overweight and obesity,63.2,3.6734693877551,55.7,70.1,2019,total,high,epiquery_export
+306,Chelsea-Village,obesity,Overweight and obesity,59.8,4.2346938775510194,51.2,67.8,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,obesity,Overweight and obesity,58.9,4.540816326530612,49.7,67.5,2019,total,high,epiquery_export
+401,"LIC, Astoria",obesity,Overweight and obesity,41.8,4.744897959183672,32.7,51.3,2019,total,high,epiquery_export
+402,West Queens,obesity,Overweight and obesity,36.7,3.6734693877551026,29.8,44.2,2019,total,high,epiquery_export
+403,Flushing,obesity,Overweight and obesity,55.7,5.688775510204081,44.3,66.6,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,obesity,Overweight and obesity,41.6,5.943877551020409,30.4,53.7,2019,total,low,epiquery_export
+405,Ridgewood,obesity,Overweight and obesity,38.8,4.285714285714286,30.7,47.5,2019,total,high,epiquery_export
+407,SouthWest Queens,obesity,Overweight and obesity,40.6,4.183673469387755,32.7,49.1,2019,total,high,epiquery_export
+408,Jamaica,obesity,Overweight and obesity,40.5,4.719387755102041,31.6,50.1,2019,total,high,epiquery_export
+409,SouthEast Queens,obesity,Overweight and obesity,32.8,5.76530612244898,22.5,45.1,2019,total,low,epiquery_export
+410,Rockaway,obesity,Overweight and obesity,26.0,5.637755102040817,16.5,38.6,2019,total,low,epiquery_export
+501,Northern SI,obesity,Overweight and obesity,32.5,4.821428571428572,23.7,42.6,2019,total,high,epiquery_export
+503,Southern SI,obesity,Overweight and obesity,39.3,3.9540816326530615,31.9,47.4,2019,total,high,epiquery_export
+101,Kingsbridge,obesity,Overweight and obesity,25.6,4.872448979591836,17.2,36.3,2019,total,high,epiquery_export
+102,NE Bronx,obesity,Overweight and obesity,39.4,5.10204081632653,29.8,49.8,2019,total,low,epiquery_export
+103,Fordham-Bronx Pk,obesity,Overweight and obesity,37.7,4.566326530612246,29.2,47.1,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,obesity,Overweight and obesity,28.8,3.5714285714285707,22.3,36.3,2019,total,high,epiquery_export
+105,South Bronx,obesity,Overweight and obesity,32.4,2.933673469387755,26.9,38.4,2019,total,high,epiquery_export
+201,Greenpoint,obesity,Overweight and obesity,25.4,5.127551020408164,16.6,36.7,2019,total,low,epiquery_export
+202,Downtown-Heights-Slope,obesity,Overweight and obesity,35.9,4.056122448979592,28.3,44.2,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,obesity,Overweight and obesity,37.7,3.6479591836734695,30.8,45.1,2019,total,high,epiquery_export
+204,East New York,obesity,Overweight and obesity,35.3,5.433673469387756,25.4,46.7,2019,total,low,epiquery_export
+205,Sunset Park,obesity,Overweight and obesity,27.2,5.076530612244897,18.4,38.3,2019,total,high,epiquery_export
+206,Borough Park,obesity,Overweight and obesity,40.3,4.362244897959184,32.0,49.1,2019,total,high,epiquery_export
+207,Flatbush,obesity,Overweight and obesity,27.9,3.775510204081632,21.1,35.9,2019,total,high,epiquery_export
+208,Canarsie,obesity,Overweight and obesity,29.7,4.89795918367347,21.0,40.2,2019,total,high,epiquery_export
+209,Bensonhurst,obesity,Overweight and obesity,38.3,4.23469387755102,30.3,46.9,2019,total,high,epiquery_export
+210,Coney Island,obesity,Overweight and obesity,30.2,3.6734693877551017,23.5,37.9,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,obesity,Overweight and obesity,29.2,4.4897959183673475,21.1,38.7,2019,total,high,epiquery_export
+301,Washington Heights,obesity,Overweight and obesity,38.7,4.540816326530613,30.2,48.0,2019,total,high,epiquery_export
+302,Central Harlem,obesity,Overweight and obesity,32.1,5.765306122448979,21.8,44.4,2019,total,low,epiquery_export
+303,East Harlem,obesity,Overweight and obesity,36.2,6.020408163265306,25.2,48.8,2019,total,low,epiquery_export
+304,Upper West Side,obesity,Overweight and obesity,26.4,5.178571428571428,17.5,37.8,2019,total,low,epiquery_export
+305,Upper East Side-Gramercy,obesity,Overweight and obesity,27.6,3.4183673469387754,21.4,34.8,2019,total,high,epiquery_export
+306,Chelsea-Village,obesity,Overweight and obesity,27.6,3.9795918367346945,20.5,36.1,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,obesity,Overweight and obesity,30.7,4.33673469387755,22.8,39.8,2019,total,high,epiquery_export
+401,"LIC, Astoria",obesity,Overweight and obesity,38.0,4.795918367346938,29.1,47.9,2019,total,high,epiquery_export
+402,West Queens,obesity,Overweight and obesity,41.3,3.801020408163265,34.0,48.9,2019,total,high,epiquery_export
+403,Flushing,obesity,Overweight and obesity,32.6,5.714285714285714,22.4,44.8,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,obesity,Overweight and obesity,40.2,5.663265306122448,29.6,51.8,2019,total,low,epiquery_export
+405,Ridgewood,obesity,Overweight and obesity,34.8,4.438775510204081,26.6,44.0,2019,total,high,epiquery_export
+407,SouthWest Queens,obesity,Overweight and obesity,31.6,3.775510204081633,24.7,39.5,2019,total,high,epiquery_export
+408,Jamaica,obesity,Overweight and obesity,32.8,4.464285714285715,24.7,42.2,2019,total,high,epiquery_export
+409,SouthEast Queens,obesity,Overweight and obesity,31.9,4.51530612244898,23.7,41.4,2019,total,high,epiquery_export
+410,Rockaway,obesity,Overweight and obesity,43.6,6.989795918367347,30.4,57.8,2019,total,low,epiquery_export
+501,Northern SI,obesity,Overweight and obesity,41.8,5.229591836734694,31.9,52.4,2019,total,low,epiquery_export
+503,Southern SI,obesity,Overweight and obesity,28.8,3.6479591836734695,22.2,36.5,2019,total,high,epiquery_export
+101,Kingsbridge,obesity,Overweight and obesity,24.9,5.535714285714285,15.6,37.3,2019,total,low,epiquery_export
+102,NE Bronx,obesity,Overweight and obesity,29.2,4.183673469387756,21.7,38.1,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,obesity,Overweight and obesity,35.5,4.413265306122449,27.3,44.6,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,obesity,Overweight and obesity,37.4,3.75,30.3,45.0,2019,total,high,epiquery_export
+105,South Bronx,obesity,Overweight and obesity,33.6,3.0357142857142856,27.9,39.8,2019,total,high,epiquery_export
+201,Greenpoint,obesity,Overweight and obesity,17.1,4.336734693877551,10.2,27.2,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,obesity,Overweight and obesity,15.8,3.137755102040816,10.6,22.9,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,obesity,Overweight and obesity,26.2,3.1632653061224487,20.5,32.9,2019,total,high,epiquery_export
+204,East New York,obesity,Overweight and obesity,35.3,5.255102040816326,25.7,46.3,2019,total,low,epiquery_export
+205,Sunset Park,obesity,Overweight and obesity,13.5,3.724489795918367,7.8,22.4,2019,total,high,epiquery_export
+206,Borough Park,obesity,Overweight and obesity,19.2,3.0102040816326534,14.0,25.8,2019,total,high,epiquery_export
+207,Flatbush,obesity,Overweight and obesity,29.9,3.6224489795918364,23.3,37.5,2019,total,high,epiquery_export
+208,Canarsie,obesity,Overweight and obesity,41.0,4.974489795918368,31.6,51.1,2019,total,high,epiquery_export
+209,Bensonhurst,obesity,Overweight and obesity,18.2,2.9591836734693877,13.1,24.7,2019,total,high,epiquery_export
+210,Coney Island,obesity,Overweight and obesity,26.5,4.056122448979592,19.3,35.2,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,obesity,Overweight and obesity,34.4,5.076530612244898,25.2,45.1,2019,total,high,epiquery_export
+301,Washington Heights,obesity,Overweight and obesity,25.7,4.107142857142858,18.5,34.6,2019,total,high,epiquery_export
+302,Central Harlem,obesity,Overweight and obesity,35.8,5.9183673469387745,25.1,48.3,2019,total,low,epiquery_export
+303,East Harlem,obesity,Overweight and obesity,34.8,5.816326530612245,24.3,47.1,2019,total,low,epiquery_export
+304,Upper West Side,obesity,Overweight and obesity,18.1,4.948979591836735,10.3,29.7,2019,total,high,epiquery_export
+305,Upper East Side-Gramercy,obesity,Overweight and obesity,9.2,1.8877551020408163,6.2,13.6,2019,total,high,epiquery_export
+306,Chelsea-Village,obesity,Overweight and obesity,12.6,3.392857142857143,7.4,20.7,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,obesity,Overweight and obesity,10.4,1.9642857142857144,7.2,14.9,2019,total,high,epiquery_export
+401,"LIC, Astoria",obesity,Overweight and obesity,20.2,4.13265306122449,13.3,29.5,2019,total,high,epiquery_export
+402,West Queens,obesity,Overweight and obesity,22.1,3.2653061224489797,16.3,29.1,2019,total,high,epiquery_export
+403,Flushing,obesity,Overweight and obesity,11.6,4.13265306122449,5.8,22.0,2019,total,low,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,obesity,Overweight and obesity,18.2,3.9285714285714293,11.7,27.1,2019,total,high,epiquery_export
+405,Ridgewood,obesity,Overweight and obesity,26.4,3.5204081632653055,20.1,33.9,2019,total,high,epiquery_export
+407,SouthWest Queens,obesity,Overweight and obesity,27.8,3.750000000000001,21.0,35.7,2019,total,high,epiquery_export
+408,Jamaica,obesity,Overweight and obesity,26.7,4.158163265306123,19.3,35.6,2019,total,high,epiquery_export
+409,SouthEast Queens,obesity,Overweight and obesity,35.3,5.586734693877551,25.1,47.0,2019,total,low,epiquery_export
+410,Rockaway,obesity,Overweight and obesity,30.4,5.918367346938776,20.0,43.2,2019,total,low,epiquery_export
+501,Northern SI,obesity,Overweight and obesity,25.7,4.744897959183674,17.5,36.1,2019,total,high,epiquery_export
+503,Southern SI,obesity,Overweight and obesity,31.9,4.107142857142858,24.4,40.5,2019,total,high,epiquery_export
+101,Kingsbridge,highbp,High blood pressure (ever),24.1,5.229591836734693,15.3,35.8,2019,total,low,epiquery_export
+102,NE Bronx,highbp,High blood pressure (ever),31.7,3.6479591836734686,25.0,39.3,2019,total,high,epiquery_export
+103,Fordham-Bronx Pk,highbp,High blood pressure (ever),34.5,3.6224489795918364,27.7,41.9,2019,total,high,epiquery_export
+104,Pelham-Throgs Neck,highbp,High blood pressure (ever),35.4,3.494897959183674,28.9,42.6,2019,total,high,epiquery_export
+105,South Bronx,highbp,High blood pressure (ever),38.3,2.5765306122448983,33.3,43.4,2019,total,high,epiquery_export
+201,Greenpoint,highbp,High blood pressure (ever),20.6,4.821428571428572,12.7,31.6,2019,total,high,epiquery_export
+202,Downtown-Heights-Slope,highbp,High blood pressure (ever),21.0,2.6275510204081636,16.3,26.6,2019,total,high,epiquery_export
+203,Bed Stuy-Crown Heights,highbp,High blood pressure (ever),31.7,3.2397959183673466,25.7,38.4,2019,total,high,epiquery_export
+204,East New York,highbp,High blood pressure (ever),32.0,3.6734693877551026,25.3,39.7,2019,total,high,epiquery_export
+205,Sunset Park,highbp,High blood pressure (ever),27.7,5.357142857142858,18.4,39.4,2019,total,low,epiquery_export
+206,Borough Park,highbp,High blood pressure (ever),19.0,2.678571428571429,14.3,24.8,2019,total,high,epiquery_export
+207,Flatbush,highbp,High blood pressure (ever),30.9,3.36734693877551,24.7,37.9,2019,total,high,epiquery_export
+208,Canarsie,highbp,High blood pressure (ever),40.1,4.948979591836736,30.8,50.2,2019,total,high,epiquery_export
+209,Bensonhurst,highbp,High blood pressure (ever),25.9,3.4948979591836724,19.6,33.3,2019,total,high,epiquery_export
+210,Coney Island,highbp,High blood pressure (ever),29.6,3.443877551020407,23.3,36.8,2019,total,high,epiquery_export
+211,Williamsburg-Bushwk,highbp,High blood pressure (ever),34.8,4.4897959183673475,26.5,44.1,2019,total,high,epiquery_export
+301,Washington Heights,highbp,High blood pressure (ever),38.1,4.387755102040816,29.8,47.0,2019,total,high,epiquery_export
+302,Central Harlem,highbp,High blood pressure (ever),30.7,3.316326530612245,24.6,37.6,2019,total,high,epiquery_export
+303,East Harlem,highbp,High blood pressure (ever),31.3,4.515306122448979,23.1,40.8,2019,total,high,epiquery_export
+304,Upper West Side,highbp,High blood pressure (ever),18.4,4.311224489795918,11.4,28.3,2019,total,high,epiquery_export
+305,Upper East Side-Gramercy,highbp,High blood pressure (ever),18.3,2.5765306122448983,13.7,23.8,2019,total,high,epiquery_export
+306,Chelsea-Village,highbp,High blood pressure (ever),21.0,3.6989795918367347,14.7,29.2,2019,total,high,epiquery_export
+309,Union Square-Lower Manhattan,highbp,High blood pressure (ever),23.7,2.831632653061224,18.6,29.7,2019,total,high,epiquery_export
+401,"LIC, Astoria",highbp,High blood pressure (ever),26.6,4.234693877551021,19.1,35.7,2019,total,high,epiquery_export
+402,West Queens,highbp,High blood pressure (ever),24.6,3.1632653061224496,18.9,31.3,2019,total,high,epiquery_export
+403,Flushing,highbp,High blood pressure (ever),23.3,4.438775510204082,15.7,33.1,2019,total,high,epiquery_export
+404,Bayside Little Neck-Fresh Meadows,highbp,High blood pressure (ever),28.9,3.9285714285714293,21.8,37.2,2019,total,high,epiquery_export
+405,Ridgewood,highbp,High blood pressure (ever),26.6,3.367346938775511,20.5,33.7,2019,total,high,epiquery_export
+407,SouthWest Queens,highbp,High blood pressure (ever),29.0,2.831632653061224,23.8,34.9,2019,total,high,epiquery_export
+408,Jamaica,highbp,High blood pressure (ever),23.5,3.4183673469387754,17.5,30.9,2019,total,high,epiquery_export
+409,SouthEast Queens,highbp,High blood pressure (ever),24.8,4.183673469387755,17.5,33.9,2019,total,high,epiquery_export
+410,Rockaway,highbp,High blood pressure (ever),32.6,5.000000000000001,23.6,43.2,2019,total,high,epiquery_export
+501,Northern SI,highbp,High blood pressure (ever),26.0,3.9795918367346945,18.9,34.5,2019,total,high,epiquery_export
+503,Southern SI,highbp,High blood pressure (ever),24.7,3.2653061224489797,18.8,31.6,2019,total,high,epiquery_export

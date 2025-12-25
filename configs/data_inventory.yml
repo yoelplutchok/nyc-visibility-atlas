@@ -1,0 +1,265 @@
+# NYC Visibility Atlas - Data Inventory
+# Provenance tracking for all datasets (Section 7)
+
+# =============================================================================
+# INVENTORY METADATA
+# =============================================================================
+inventory_version: "1.0.0"
+last_updated: null
+updated_by: null
+
+# =============================================================================
+# DENOMINATOR DATA
+# =============================================================================
+denominators:
+  acs_5year:
+    name: "American Community Survey 5-Year Estimates"
+    source_org: "US Census Bureau"
+    ingestion_mode: "api"
+    api_endpoint: "https://api.census.gov/data/{year}/acs/acs5"
+    
+    versions:
+      - vintage: "2022"
+        period: "2018-2022"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        notes: "Primary denominator period"
+      
+      - vintage: "2021"
+        period: "2017-2021"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        notes: "Sensitivity check period"
+    
+    tables_needed:
+      - table_id: "B01001"
+        description: "Sex by Age"
+        use: "Age band denominators"
+      - table_id: "B03002"
+        description: "Hispanic or Latino Origin by Race"
+        use: "Race/ethnicity denominators"
+      - table_id: "B17001"
+        description: "Poverty Status by Age"
+        use: "Poverty status denominators"
+      - table_id: "B27001"
+        description: "Health Insurance Coverage Status by Age"
+        use: "Insurance status denominators"
+      - table_id: "B16004"
+        description: "Age by Language Spoken at Home"
+        use: "LEP denominators"
+    
+    documentation_url: "https://www.census.gov/programs-surveys/acs/technical-documentation.html"
+
+# =============================================================================
+# GEOGRAPHY DATA
+# =============================================================================
+geography:
+  nta_boundaries:
+    name: "NYC Neighborhood Tabulation Areas (NTA)"
+    source_org: "NYC Department of City Planning"
+    ingestion_mode: "file"
+    download_url: "https://data.cityofnewyork.us/City-Government/2020-Neighborhood-Tabulation-Areas-NTAs-/9nt8-h7nd"
+    
+    versions:
+      - version: "2020"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        geometry_type: "MultiPolygon"
+        crs: "EPSG:4326"
+        feature_count: null
+    
+    documentation_url: "https://www.nyc.gov/site/planning/data-maps/open-data/dwn-nynta.page"
+  
+  zcta_boundaries:
+    name: "ZIP Code Tabulation Areas (ZCTA)"
+    source_org: "US Census Bureau TIGER"
+    ingestion_mode: "file"
+    download_url: "https://www2.census.gov/geo/tiger/TIGER2020/ZCTA520/"
+    
+    versions:
+      - version: "2020"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        geometry_type: "MultiPolygon"
+        crs: "EPSG:4326"
+        feature_count: null
+        notes: "Filter to NYC ZCTAs only"
+  
+  tract_boundaries:
+    name: "Census Tracts (for crosswalk base)"
+    source_org: "US Census Bureau TIGER"
+    ingestion_mode: "file"
+    download_url: "https://www2.census.gov/geo/tiger/TIGER2020/TRACT/"
+    
+    versions:
+      - version: "2020"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        notes: "Base geography for population-weighted crosswalks"
+
+# =============================================================================
+# NUMERATOR DATA SOURCES
+# =============================================================================
+numerators:
+  chs:
+    name: "NYC Community Health Survey"
+    source_org: "NYC DOHMH"
+    ingestion_mode: "file"
+    download_url: "https://data.cityofnewyork.us/Health/Community-Health-Survey"
+    
+    versions:
+      - years: "2018-2022"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        geography: "UHF34"
+        notes: "Need to aggregate multiple years; check for UHF-to-NTA crosswalk"
+    
+    key_variables:
+      - "age groups"
+      - "race/ethnicity"
+      - "poverty level"
+      - "insurance status"
+    
+    data_dictionary_url: null
+    known_limitations:
+      - "Published at UHF34 geography - requires crosswalk to NTA"
+      - "Sample sizes may be small for subgroups"
+      - "Adult population only (18+)"
+  
+  sparcs:
+    name: "SPARCS Hospital Discharge Data"
+    source_org: "NY State DOH"
+    ingestion_mode: "file"
+    download_url: "https://health.data.ny.gov/"
+    
+    versions:
+      - years: "2018-2022"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        geography: "ZIP"
+        record_type: "aggregate"
+        notes: "Public aggregate data by patient residence ZIP"
+    
+    key_variables:
+      - "patient ZIP"
+      - "age group"
+      - "discharge type (inpatient/ED)"
+    
+    known_limitations:
+      - "Public data is aggregated - no unique patient counts"
+      - "ZIP geography requires crosswalk"
+      - "May include out-of-state residents"
+  
+  enrollment:
+    name: "Medicaid/Medicare Enrollment"
+    source_org: "CMS / NY DOH"
+    ingestion_mode: "manual"
+    download_url: null
+    
+    versions:
+      - years: "2018-2022"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        notes: "May require formal data request"
+    
+    key_variables:
+      - "enrollment counts by ZIP/geography"
+      - "age groups"
+    
+    known_limitations:
+      - "Public data availability uncertain"
+      - "May need to combine multiple sources (Medicaid + Medicare)"
+  
+  vital:
+    name: "Vital Statistics (Births/Deaths)"
+    source_org: "NYC DOHMH"
+    ingestion_mode: "file"
+    download_url: null
+    
+    versions:
+      - years: "2018-2022"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        geography: "varies"
+        notes: "Check NYC Open Data for available aggregations"
+    
+    known_limitations:
+      - "Birth data may be by mother's residence"
+      - "Death data by decedent's residence"
+
+  311:
+    name: "311 Service Requests"
+    source_org: "NYC 311 / DoITT"
+    ingestion_mode: "api"
+    download_url: "https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9"
+    
+    versions:
+      - years: "2018-2022"
+        status: "pending"
+        download_date: null
+        file_path: null
+        checksum: null
+        geography: "point"
+        notes: "Optional civic layer - geocoded points to join to NTA"
+    
+    known_limitations:
+      - "Not health data - for contrast only"
+      - "Point data requires spatial join"
+
+# =============================================================================
+# CROSSWALK DATA
+# =============================================================================
+crosswalks:
+  uhf34_to_nta:
+    name: "UHF34 to NTA Crosswalk"
+    status: "to_build"
+    method: "population_weighted"
+    base_geography: "census_tract"
+    notes: "Needed for CHS data"
+  
+  zip_to_nta:
+    name: "ZIP to NTA Crosswalk"
+    status: "to_build"
+    method: "population_weighted"
+    base_geography: "census_tract"
+    notes: "Needed for SPARCS and enrollment data"
+  
+  tract_to_nta:
+    name: "Census Tract to NTA Crosswalk"
+    status: "to_build"
+    method: "population_weighted"
+    notes: "May be available from NYC DCP"
+
+# =============================================================================
+# DATA QUALITY NOTES
+# =============================================================================
+quality_notes:
+  general:
+    - "All downloaded files should be checksummed for integrity"
+    - "Update download_date and checksum when data is acquired"
+    - "Document any data cleaning or filtering applied"
+  
+  pending_decisions:
+    - "Confirm exact ACS tables needed for each stratum"
+    - "Verify CHS data availability for 2018-2022 period"
+    - "Determine if SPARCS unique patient counts are available"
+    - "Identify source for enrollment data"
+

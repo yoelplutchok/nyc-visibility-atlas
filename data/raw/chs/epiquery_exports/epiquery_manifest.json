@@ -1,0 +1,46 @@
+{
+  "source": "NYC EpiQuery - Community Health Survey",
+  "url": "https://a816-health.nyc.gov/hdi/epiquery/",
+  "download_date": "2025-12-23",
+  "year": 2019,
+  "geography": "UHF-34",
+  "indicators": [
+    "diabetes_ever",
+    "highbp_ever",
+    "obesity",
+    "current_smoker",
+    "current_asthma",
+    "mental_health_treatment",
+    "binge_drinking",
+    "uninsured",
+    "no_pcp",
+    "flu_vaccine"
+  ],
+  "files": [
+    {"filename": "chs_diabetes_2019.csv", "indicator": "diabetes_ever", "status": "pending"},
+    {"filename": "chs_highbp_2019.csv", "indicator": "highbp_ever", "status": "pending"},
+    {"filename": "chs_obesity_2019.csv", "indicator": "obesity", "status": "pending"},
+    {"filename": "chs_smoking_2019.csv", "indicator": "current_smoker", "status": "pending"},
+    {"filename": "chs_asthma_2019.csv", "indicator": "current_asthma", "status": "pending"},
+    {"filename": "chs_mentalhealth_2019.csv", "indicator": "mental_health_treatment", "status": "pending"},
+    {"filename": "chs_binge_2019.csv", "indicator": "binge_drinking", "status": "pending"},
+    {"filename": "chs_uninsured_2019.csv", "indicator": "uninsured", "status": "pending"},
+    {"filename": "chs_nopcp_2019.csv", "indicator": "no_pcp", "status": "pending"},
+    {"filename": "chs_fluvax_2019.csv", "indicator": "flu_vaccine", "status": "pending"}
+  ],
+  "expected_columns": {
+    "uhf_name": "UHF neighborhood name",
+    "uhf_code": "UHF code (if available)",
+    "estimate": "Prevalence %",
+    "ci_low": "Lower 95% CI",
+    "ci_high": "Upper 95% CI",
+    "reliability": "Flag (* or # or blank)",
+    "year": "Survey year",
+    "indicator": "Indicator name"
+  },
+  "notes": {
+    "suppression_flag_hash": "# = suppressed due to small sample size",
+    "reliability_flag_asterisk": "* = high uncertainty, mark as low reliability",
+    "year_note": "If 2019 unavailable, use most recent year and update year field"
+  }
+}

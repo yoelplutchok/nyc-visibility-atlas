@@ -1,0 +1,215 @@
+# NYC Visibility Atlas - Strata Definitions
+# Canonical strata dimensions with ACS table mappings (Section 6)
+
+# =============================================================================
+# STRATA CONFIGURATION
+# =============================================================================
+# Each stratum dimension defines:
+#   - id: unique identifier used in code
+#   - name: human-readable name
+#   - required: whether this stratum is mandatory
+#   - categories: list of category definitions with ACS mappings
+#   - acs_tables: relevant ACS table IDs for this dimension
+
+strata:
+  # ---------------------------------------------------------------------------
+  # AGE BANDS (Required)
+  # ---------------------------------------------------------------------------
+  age:
+    id: "age"
+    name: "Age Group"
+    required: true
+    description: "Age bands for demographic stratification"
+    acs_tables:
+      - "B01001"  # Sex by Age
+    categories:
+      - id: "total"
+        name: "All Ages"
+        acs_universe: "total_population"
+      - id: "0_17"
+        name: "Under 18"
+        min_age: 0
+        max_age: 17
+      - id: "18_24"
+        name: "18-24"
+        min_age: 18
+        max_age: 24
+      - id: "25_44"
+        name: "25-44"
+        min_age: 25
+        max_age: 44
+      - id: "45_64"
+        name: "45-64"
+        min_age: 45
+        max_age: 64
+      - id: "65_plus"
+        name: "65 and Over"
+        min_age: 65
+        max_age: null
+
+  # ---------------------------------------------------------------------------
+  # RACE/ETHNICITY (Conditional on geography availability)
+  # ---------------------------------------------------------------------------
+  race_ethnicity:
+    id: "race_ethnicity"
+    name: "Race/Ethnicity"
+    required: false
+    description: "Race and Hispanic origin categories"
+    acs_tables:
+      - "B03002"  # Hispanic or Latino Origin by Race
+    categories:
+      - id: "total"
+        name: "All Race/Ethnicity Groups"
+      - id: "hispanic"
+        name: "Hispanic/Latino (any race)"
+        acs_variable: "B03002_012E"
+      - id: "nh_white"
+        name: "Non-Hispanic White"
+        acs_variable: "B03002_003E"
+      - id: "nh_black"
+        name: "Non-Hispanic Black"
+        acs_variable: "B03002_004E"
+      - id: "nh_asian"
+        name: "Non-Hispanic Asian"
+        acs_variable: "B03002_006E"
+      - id: "nh_other"
+        name: "Non-Hispanic Other/Multiple"
+        acs_variables:
+          - "B03002_005E"  # American Indian/Alaska Native
+          - "B03002_007E"  # Native Hawaiian/Pacific Islander
+          - "B03002_008E"  # Some other race
+          - "B03002_009E"  # Two or more races
+
+  # ---------------------------------------------------------------------------
+  # POVERTY STATUS
+  # ---------------------------------------------------------------------------
+  poverty:
+    id: "poverty"
+    name: "Poverty Status"
+    required: false
+    description: "Poverty status based on ratio of income to poverty level"
+    acs_tables:
+      - "B17001"  # Poverty Status by Age
+      - "C17002"  # Ratio of Income to Poverty Level
+    categories:
+      - id: "total"
+        name: "All Poverty Levels"
+      - id: "below_poverty"
+        name: "Below 100% FPL"
+        poverty_ratio_max: 1.0
+      - id: "near_poverty"
+        name: "100-199% FPL"
+        poverty_ratio_min: 1.0
+        poverty_ratio_max: 2.0
+      - id: "above_poverty"
+        name: "200%+ FPL"
+        poverty_ratio_min: 2.0
+
+  # ---------------------------------------------------------------------------
+  # INSURANCE STATUS
+  # ---------------------------------------------------------------------------
+  insurance:
+    id: "insurance"
+    name: "Health Insurance Status"
+    required: false
+    description: "Health insurance coverage status"
+    acs_tables:
+      - "B27001"  # Health Insurance Coverage Status by Age
+      - "B27010"  # Types of Health Insurance Coverage by Age
+    categories:
+      - id: "total"
+        name: "All Insurance Statuses"
+      - id: "insured"
+        name: "With Health Insurance"
+      - id: "uninsured"
+        name: "Without Health Insurance"
+      - id: "public_only"
+        name: "Public Insurance Only"
+      - id: "private"
+        name: "With Private Insurance"
+
+  # ---------------------------------------------------------------------------
+  # LIMITED ENGLISH PROFICIENCY (LEP)
+  # ---------------------------------------------------------------------------
+  lep:
+    id: "lep"
+    name: "Limited English Proficiency"
+    required: false
+    description: "English language proficiency status"
+    acs_tables:
+      - "B16004"  # Age by Language Spoken at Home by Ability to Speak English
+    categories:
+      - id: "total"
+        name: "All Language Proficiency Levels"
+      - id: "english_only"
+        name: "English Only"
+      - id: "lep"
+        name: "Limited English Proficiency"
+        description: "Speaks English less than 'very well'"
+      - id: "english_proficient"
+        name: "English Proficient"
+        description: "Speaks English 'very well' or English only"
+
+  # ---------------------------------------------------------------------------
+  # MOBILITY (Moved in Last Year)
+  # ---------------------------------------------------------------------------
+  mobility:
+    id: "mobility"
+    name: "Residential Mobility"
+    required: false
+    description: "Whether moved in the past year"
+    acs_tables:
+      - "B07001"  # Geographical Mobility in the Past Year by Age
+    categories:
+      - id: "total"
+        name: "All Mobility Statuses"
+      - id: "same_residence"
+        name: "Same Residence 1 Year Ago"
+      - id: "moved_within_county"
+        name: "Moved Within County"
+      - id: "moved_from_elsewhere"
+        name: "Moved From Different County/State/Abroad"
+
+  # ---------------------------------------------------------------------------
+  # HOUSING CROWDING
+  # ---------------------------------------------------------------------------
+  housing_crowding:
+    id: "housing_crowding"
+    name: "Housing Crowding"
+    required: false
+    description: "Persons per room in housing unit"
+    acs_tables:
+      - "B25014"  # Tenure by Occupants Per Room
+    categories:
+      - id: "total"
+        name: "All Crowding Levels"
+      - id: "not_crowded"
+        name: "Not Crowded"
+        occupants_per_room_max: 1.0
+      - id: "crowded"
+        name: "Crowded (>1.0 persons per room)"
+        occupants_per_room_min: 1.0
+      - id: "severely_crowded"
+        name: "Severely Crowded (>1.5 persons per room)"
+        occupants_per_room_min: 1.5
+
+# =============================================================================
+# DEFAULT STRATA FOR ANALYSIS
+# =============================================================================
+defaults:
+  # Strata to include by default in visibility calculations
+  enabled_strata:
+    - "age"
+  
+  # Additional strata to enable if data supports
+  optional_strata:
+    - "race_ethnicity"
+    - "poverty"
+    - "insurance"
+    - "lep"
+    - "mobility"
+    - "housing_crowding"
+  
+  # Default stratum value when stratum is not applicable
+  default_stratum_id: "total"
+

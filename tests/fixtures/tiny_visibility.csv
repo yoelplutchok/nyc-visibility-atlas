@@ -1,0 +1,5 @@
+geo_id,stratum_id,source_id,time_window_id,observed_count,reference_pop,visibility,reliability_flag,numerator_type
+BK0101,total,chs,2019,50.0,10000.0,5.0,high,respondents
+BK0102,total,chs,2019,8.0,5000.0,1.6,low,respondents
+MN0101,total,sparcs,2019,500.0,20000.0,25.0,high,encounters
+

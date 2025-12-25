@@ -1,0 +1,222 @@
+# NYC Visibility Atlas - Visualization Configuration
+# Settings for atlas views, color schemes, and tooltips (Section 13)
+
+# =============================================================================
+# COLOR SCHEMES
+# =============================================================================
+colors:
+  # Primary visibility colormap (sequential)
+  visibility:
+    name: "Visibility Index"
+    type: "sequential"
+    palette: "YlOrRd"  # Yellow-Orange-Red
+    bins: 5
+    bin_method: "quantile"  # quantile, equal_interval, jenks
+    na_color: "#cccccc"
+    labels:
+      - "Very Low"
+      - "Low"
+      - "Moderate"
+      - "High"
+      - "Very High"
+  
+  # Diverging colormap for cross-source comparisons
+  divergence:
+    name: "Visibility Divergence"
+    type: "diverging"
+    palette: "RdBu"  # Red-Blue diverging
+    center: 0
+    bins: 7
+    na_color: "#cccccc"
+    labels:
+      - "Much Lower (Source A)"
+      - "Lower"
+      - "Slightly Lower"
+      - "Similar"
+      - "Slightly Higher"
+      - "Higher"
+      - "Much Higher (Source B)"
+  
+  # Typology colors (categorical)
+  typology:
+    name: "Visibility Typology"
+    type: "categorical"
+    palette:
+      low_all: "#d73027"        # Red - low visibility across all sources
+      low_survey: "#fc8d59"     # Orange - low survey, other ok
+      low_utilization: "#fee090" # Yellow - low utilization
+      high_survey_low_util: "#91bfdb"  # Light blue - survey ok, utilization low
+      high_all: "#4575b4"       # Blue - high visibility all
+      mixed: "#999999"          # Gray - mixed pattern
+    na_color: "#ffffff"
+
+# =============================================================================
+# RELIABILITY DISPLAY (Section 5.3)
+# =============================================================================
+reliability:
+  # Opacity by reliability flag
+  opacity:
+    high: 1.0
+    low: 0.6
+    suppressed: 0.3
+    unknown: 0.4
+  
+  # Border/outline for low reliability
+  border:
+    high:
+      width: 0.5
+      color: "#333333"
+    low:
+      width: 1.5
+      color: "#ff6600"
+      style: "dashed"
+    suppressed:
+      width: 2
+      color: "#cc0000"
+      style: "dotted"
+  
+  # Hatching patterns
+  hatching:
+    enabled: true
+    patterns:
+      low: "diagonal-light"
+      suppressed: "diagonal-dense"
+
+# =============================================================================
+# TOOLTIP TEMPLATES
+# =============================================================================
+tooltips:
+  # Standard visibility tooltip
+  visibility:
+    title: "{geo_name}"
+    fields:
+      - label: "Geography ID"
+        value: "{geo_id}"
+      - label: "Source"
+        value: "{source_name}"
+      - label: "Numerator Definition"
+        value: "{numerator_type_description}"
+      - label: "Observed Count"
+        value: "{observed_count:,.0f}"
+      - label: "Reference Population"
+        value: "{reference_pop:,.0f}"
+      - label: "Visibility Index"
+        value: "{visibility:.1f} per 1,000"
+      - label: "Reliability"
+        value: "{reliability_flag}"
+    notes: "{source_notes}"
+  
+  # Divergence comparison tooltip
+  divergence:
+    title: "{geo_name}"
+    fields:
+      - label: "Source A ({source_a_name})"
+        value: "{visibility_a:.1f} per 1,000 (rank: {pct_rank_a:.0f}%)"
+      - label: "Source B ({source_b_name})"
+        value: "{visibility_b:.1f} per 1,000 (rank: {pct_rank_b:.0f}%)"
+      - label: "Rank Difference"
+        value: "{rank_diff:+.0f} percentile points"
+  
+  # Typology tooltip
+  typology:
+    title: "{geo_name}"
+    fields:
+      - label: "Typology"
+        value: "{typology_label}"
+      - label: "Stability Score"
+        value: "{stability_score:.0%}"
+      - label: "Profile Summary"
+        value: "{profile_summary}"
+
+# =============================================================================
+# MAP VIEWS (Section 13.1)
+# =============================================================================
+views:
+  # View A: Single source visibility
+  source_visibility:
+    id: "source_visibility"
+    name: "Source Visibility Map"
+    description: "Visibility index for a single data source"
+    default_source: "chs"
+    toggles:
+      - name: "Source"
+        options: ["chs", "sparcs", "enrollment", "vital"]
+      - name: "Subgroup"
+        options: ["total", "age_18_24", "age_25_44", "age_45_64", "age_65_plus"]
+      - name: "Time Window"
+        options: ["2018_2022"]
+      - name: "Standardization"
+        options: ["crude", "age_standardized"]
+    colormap: "visibility"
+    show_reliability: true
+  
+  # View B: Cross-source divergence
+  cross_source:
+    id: "cross_source"
+    name: "Cross-Source Divergence"
+    description: "Compare visibility between two sources"
+    default_sources: ["chs", "sparcs"]
+    comparison_method: "percentile_rank_difference"
+    colormap: "divergence"
+    show_reliability: true
+  
+  # View C: Composition comparison
+  composition:
+    id: "composition"
+    name: "Who is Under-Measured?"
+    description: "Compare observed composition to population share"
+    allowed_comparisons:
+      survey:
+        method: "composition_vs_population"
+        note: "Compare sample composition to population share"
+      utilization:
+        method: "within_age_only"
+        note: "Only within-age-band or age-standardized comparisons"
+    colormap: "divergence"
+
+  # Typology heatmap
+  typology_heatmap:
+    id: "typology_heatmap"
+    name: "Blind Spot Typology"
+    description: "Clustered neighborhoods by visibility pattern"
+    show_profile_on_click: true
+    colormap: "typology"
+
+# =============================================================================
+# LAYOUT AND STYLING
+# =============================================================================
+layout:
+  # Map dimensions
+  map:
+    default_zoom: 10
+    center_lat: 40.7128
+    center_lon: -74.0060
+    min_zoom: 9
+    max_zoom: 14
+  
+  # Legend position
+  legend:
+    position: "bottom-right"
+    orientation: "vertical"
+  
+  # Panel widths
+  panels:
+    sidebar_width: 300
+    info_panel_width: 350
+
+# =============================================================================
+# EXPORT SETTINGS
+# =============================================================================
+export:
+  # Supported formats
+  formats:
+    - "geojson"
+    - "png"
+    - "svg"
+  
+  # Default resolution for image exports
+  image_dpi: 300
+  
+  # Include metadata in exports
+  include_metadata: true
+

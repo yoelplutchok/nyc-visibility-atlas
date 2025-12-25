@@ -1,0 +1,168 @@
+# =============================================================================
+# NYC Visibility Atlas - Git Ignore
+# =============================================================================
+
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =============================================================================
+# Virtual Environments
+# =============================================================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# =============================================================================
+# IDE / Editor
+# =============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+.ropeproject
+
+# =============================================================================
+# Jupyter Notebooks
+# =============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# =============================================================================
+# OS Files
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# =============================================================================
+# Data Files - IMPORTANT
+# =============================================================================
+# Raw data (contains downloaded/manual exports - users must acquire themselves)
+data/raw/acs/
+data/raw/chs/*.sas7bdat
+data/raw/chs/*.pdf
+data/raw/chs/epiquery_exports/demographics/
+data/raw/sparcs/
+data/raw/311/
+data/raw/vital/epiquery_exports/*.csv
+
+# Processed data (can be regenerated from raw data)
+data/processed/
+data/interim/
+
+# Final outputs (can be regenerated)
+data/final/
+
+# Keep directory structure and documentation
+!data/raw/.gitkeep
+!data/raw/ACQUISITION.md
+!data/raw/_manifest.json
+!data/raw/chs/epiquery_exports/README.md
+!data/raw/vital/epiquery_exports/README.md
+!data/processed/.gitkeep
+!data/interim/.gitkeep
+!data/final/.gitkeep
+!data/final/README.md
+
+# =============================================================================
+# Logs
+# =============================================================================
+logs/*.jsonl
+logs/*.log
+!logs/.gitkeep
+
+# =============================================================================
+# Local Configuration (if any)
+# =============================================================================
+*.local.yml
+*.local.yaml
+.env.local
+secrets.yml
+credentials.json
+
+# =============================================================================
+# Temporary Files
+# =============================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# =============================================================================
+# Large Files (if any accidentally created)
+# =============================================================================
+*.csv.gz
+*.parquet.gz
+*.zip
+!data/raw/geo/*.zip
+
+# =============================================================================
+# Review / Draft / Internal Documents
+# =============================================================================
+# Internal review and development documents - not for public distribution
+REVIEW_BUNDLE.md
+Review.md
+nyc_visibility_atlas_project_context.md
+
+# Internal reports (methodology is documented in METHODOLOGY.md)
+reports/review_response.md
+reports/sensitivity/Review2.md
+reports/limitations_and_novelty.md
+reports/policy/
+reports/sensitivity/comprehensive_sensitivity.md
+
+# Keep only the output tables (reports/tables/) and figures (reports/figures/)
+
+# Untitled/draft documents
+Untitled*.md
+*draft*.md
+*DRAFT*.md
+

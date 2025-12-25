@@ -1,0 +1,18 @@
+{
+  "description": "Manifest for manually exported EpiQuery vital statistics data",
+  "source": "NYC EpiQuery - Vital Statistics",
+  "url": "https://a816-health.nyc.gov/hdi/epiquery/",
+  "export_date": null,
+  "year": "2019",
+  "geography": "UHF34",
+  "expected_files": [
+    "mortality_overall_2019.csv"
+  ],
+  "optional_files": [
+    "mortality_heart_disease_2019.csv",
+    "mortality_diabetes_2019.csv"
+  ],
+  "status": "pending",
+  "notes": "Export from 'Birth and Death' > 'Mortality and Premature Mortality' > 'Analyze by Neighborhood' tab"
+}
+

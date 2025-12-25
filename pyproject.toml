@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visibility-atlas"
+version = "0.1.0"
+description = "NYC Visibility Atlas: Quantifying differential visibility across public health data systems"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "NYC Visibility Atlas Team"}
+]
+keywords = ["public-health", "nyc", "visibility", "epidemiology", "health-equity"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+dependencies = [
+    "pandas>=2.0.0",
+    "geopandas>=0.14.0",
+    "pyarrow>=14.0.0",
+    "pyyaml>=6.0",
+    "requests>=2.31.0",
+    "scipy>=1.11.0",
+    "scikit-learn>=1.3.0",
+    "pyproj>=3.6.0",
+    "shapely>=2.0.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "numpy>=1.24.0",
+    "jsonschema>=4.20.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.7.0",
+]
+
+[project.urls]
+Repository = "https://github.com/nyc-visibility-atlas/nyc-visibility-atlas"
+
+[project.scripts]
+# Pipeline entry points - run with: visibility-atlas-<step>
+visibility-atlas-geographies = "visibility_atlas.cli:run_00_geographies"
+visibility-atlas-crosswalks = "visibility_atlas.cli:run_01_crosswalks"
+visibility-atlas-denominators = "visibility_atlas.cli:run_02_denominators"
+visibility-atlas-chs = "visibility_atlas.cli:run_03_chs"
+visibility-atlas-sparcs = "visibility_atlas.cli:run_04_sparcs"
+visibility-atlas-vital = "visibility_atlas.cli:run_06_vital"
+visibility-atlas-visibility = "visibility_atlas.cli:run_07_visibility"
+visibility-atlas-matrix = "visibility_atlas.cli:run_08_matrix"
+visibility-atlas-typology = "visibility_atlas.cli:run_09_typology"
+visibility-atlas-predictors = "visibility_atlas.cli:run_10_predictors"
+visibility-atlas-vulnerability = "visibility_atlas.cli:run_11_vulnerability"
+visibility-atlas-atlas = "visibility_atlas.cli:run_12_atlas"
+# Full pipeline
+visibility-atlas-run-all = "visibility_atlas.cli:run_all"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yml", "*.yaml", "*.json"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "smoke: Quick smoke tests for pipeline validation",
+    "slow: Tests that take longer to run",
+]
+

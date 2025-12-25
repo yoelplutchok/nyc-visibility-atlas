@@ -1,0 +1,53 @@
+{
+  "manifest_version": "1.0.0",
+  "project": "NYC Visibility Atlas",
+  "description": "Provenance manifest for raw data files",
+  "created_at": null,
+  "updated_at": null,
+  "datasets": {
+    "acs": {
+      "description": "American Community Survey 5-year estimates (denominators)",
+      "source": "US Census Bureau API",
+      "files": [],
+      "status": "pending"
+    },
+    "chs": {
+      "description": "NYC Community Health Survey estimates",
+      "source": "NYC DOHMH",
+      "files": [],
+      "status": "pending"
+    },
+    "sparcs": {
+      "description": "SPARCS hospitalization/ED aggregates by residence",
+      "source": "NY DOH",
+      "files": [],
+      "status": "pending"
+    },
+    "enrollment": {
+      "description": "Medicaid/Medicare enrollment aggregates",
+      "source": "TBD",
+      "files": [],
+      "status": "pending"
+    },
+    "vital": {
+      "description": "Vital events (births, deaths) by geography",
+      "source": "NYC DOHMH / NY DOH",
+      "files": [],
+      "status": "pending"
+    },
+    "311": {
+      "description": "311 service requests (optional civic contrast layer)",
+      "source": "NYC Open Data",
+      "files": [],
+      "status": "pending"
+    },
+    "geo": {
+      "description": "Geographic boundary files (NTA, ZCTA, etc.)",
+      "source": "NYC Open Data / Census TIGER",
+      "files": [],
+      "status": "pending"
+    }
+  },
+  "notes": "Each dataset entry should be updated when files are added, with download date, URL, version, and file checksums."
+}
+

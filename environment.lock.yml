@@ -1,0 +1,64 @@
+# NYC Visibility Atlas - Locked Environment
+# 
+# This file contains exact package versions for reproducibility.
+# Generated: 2025-12-25
+#
+# Usage:
+#   conda env create -f environment.lock.yml
+#   conda activate visibility-atlas
+#   pip install -e .
+#
+# To regenerate this file after updating environment.yml:
+#   conda env export --from-history > environment.lock.yml
+#   # Or use conda-lock for cross-platform locks:
+#   conda-lock -f environment.yml -p linux-64 -p osx-64 -p osx-arm64
+
+name: visibility-atlas
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python - exact version
+  - python=3.11.14
+  - pip=25.0.1
+
+  # Data manipulation - exact versions
+  - pandas=2.2.3
+  - numpy=1.26.4
+  - pyarrow=19.0.1
+
+  # Geospatial - exact versions
+  - geopandas=1.0.1
+  - shapely=2.0.7
+  - pyproj=3.7.1
+  - fiona=1.10.1
+
+  # Scientific computing - exact versions
+  - scipy=1.15.1
+  - scikit-learn=1.6.1
+
+  # Configuration and serialization
+  - pyyaml=6.0.2
+  - jsonschema=4.23.0
+
+  # HTTP requests
+  - requests=2.32.3
+
+  # Visualization
+  - matplotlib=3.10.0
+  - seaborn=0.13.2
+
+  # Testing
+  - pytest=9.0.2
+  - pytest-cov=7.0.0
+
+  # Development tools
+  - black=25.1.0
+  - ruff=0.11.0
+  - mypy=1.15.0
+
+  # Install package in editable mode
+  - pip:
+      - -e .
+

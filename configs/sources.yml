@@ -1,0 +1,228 @@
+# NYC Visibility Atlas - Data Source Registry
+# Defines all data sources, their numerator semantics, and ingestion modes (Section 7)
+
+# =============================================================================
+# SOURCE REGISTRY
+# =============================================================================
+# Each source declares:
+#   - id: unique identifier
+#   - name: human-readable name
+#   - enabled: whether to include in analysis
+#   - numerator_type: respondents | unique_persons | encounters | enrollees | events
+#   - observation_mechanism: description of what the source captures
+#   - visibility_interpretation: how to interpret the visibility index
+#   - ingestion_mode: api | file | manual
+#   - geographic_level: native geography of the source
+
+sources:
+  # ---------------------------------------------------------------------------
+  # NYC COMMUNITY HEALTH SURVEY (CHS)
+  # ---------------------------------------------------------------------------
+  chs:
+    id: "chs"
+    name: "NYC Community Health Survey"
+    enabled: true
+    category: "survey"
+    
+    numerator_type: "respondents"
+    observation_mechanism: "Survey respondents sampled from NYC adult population"
+    visibility_interpretation: "Survey measurement visibility - how well the survey measures this population"
+    
+    ingestion_mode: "file"  # Download from NYC Open Data
+    data_url: "https://data.cityofnewyork.us/Health/Community-Health-Survey/jz8u-mrj8"
+    
+    geographic_level: "uhf34"  # UHF 34 neighborhoods
+    requires_crosswalk: true
+    crosswalk_target: "nta"
+    
+    available_strata:
+      - "age"
+      - "race_ethnicity"
+      - "poverty"
+      - "insurance"
+    
+    uncertainty_available: true
+    uncertainty_type: "confidence_interval"
+    
+    notes: |
+      CHS provides estimates with confidence intervals.
+      If respondent counts unavailable, compute n_eff from SE.
+      This is MEASUREMENT visibility, not population coverage.
+
+  # ---------------------------------------------------------------------------
+  # SPARCS (Statewide Planning and Research Cooperative System)
+  # ---------------------------------------------------------------------------
+  sparcs:
+    id: "sparcs"
+    name: "SPARCS Hospital Discharge Data"
+    enabled: true
+    category: "utilization"
+    
+    # Preferred: unique_persons; fallback: encounters
+    numerator_type: "encounters"
+    numerator_type_preferred: "unique_persons"
+    observation_mechanism: "Hospital inpatient discharges and ED visits by patient residence"
+    visibility_interpretation: "Healthcare system visibility - contact intensity with hospital system"
+    
+    ingestion_mode: "file"  # Public aggregates from Health Data NY
+    data_url: "https://health.data.ny.gov/browse?q=sparcs"
+    
+    geographic_level: "zip"
+    requires_crosswalk: true
+    crosswalk_target: "nta"
+    
+    available_strata:
+      - "age"
+      - "race_ethnicity"
+    
+    uncertainty_available: false
+    
+    notes: |
+      SPARCS public data aggregated by ZIP of residence.
+      Prefer unique patients if available; otherwise use encounters.
+      For comparisons: use age-standardized rates or within-age-band comparisons.
+
+  # ---------------------------------------------------------------------------
+  # MEDICAID/MEDICARE ENROLLMENT
+  # ---------------------------------------------------------------------------
+  enrollment:
+    id: "enrollment"
+    name: "Medicaid/Medicare Enrollment"
+    enabled: true
+    category: "enrollment"
+    
+    numerator_type: "enrollees"
+    observation_mechanism: "Persons enrolled in public insurance programs"
+    visibility_interpretation: "Public insurance enrollment visibility"
+    
+    ingestion_mode: "manual"  # May require data request
+    data_url: null
+    
+    geographic_level: "zip"
+    requires_crosswalk: true
+    crosswalk_target: "nta"
+    
+    available_strata:
+      - "age"
+    
+    uncertainty_available: false
+    
+    notes: |
+      Enrollment data may require manual data request.
+      Primary metric: enrollees per 1,000 residents.
+      Optional: enrollees per 1,000 estimated eligible (if defensible).
+
+  # ---------------------------------------------------------------------------
+  # VITAL EVENTS (BIRTHS AND DEATHS)
+  # ---------------------------------------------------------------------------
+  vital:
+    id: "vital"
+    name: "Vital Events (Births/Deaths)"
+    enabled: true
+    category: "vital_events"
+    
+    numerator_type: "events"
+    observation_mechanism: "Registered births and deaths by residence"
+    visibility_interpretation: "Vital event registration completeness (high by design)"
+    
+    ingestion_mode: "file"  # NYC DOHMH vital statistics
+    data_url: null
+    
+    geographic_level: "nta"  # Or CD/ZIP depending on source
+    requires_crosswalk: false
+    
+    available_strata:
+      - "age"
+      - "race_ethnicity"
+    
+    uncertainty_available: false
+    
+    notes: |
+      Used as pipeline sanity anchor.
+      High completeness for registered events.
+      Helps detect crosswalk artifacts (implausible discontinuities).
+    
+    sub_sources:
+      births:
+        name: "Live Births"
+        numerator_type: "events"
+        denominator_note: "Per 1,000 women of childbearing age or total population"
+      deaths:
+        name: "All-Cause Deaths"
+        numerator_type: "events"
+        denominator_note: "Per 1,000 residents"
+
+  # ---------------------------------------------------------------------------
+  # 311 SERVICE REQUESTS (Optional civic layer)
+  # ---------------------------------------------------------------------------
+  311:
+    id: "311"
+    name: "311 Service Requests"
+    enabled: false  # Optional - not health data
+    category: "civic"
+    
+    numerator_type: "events"
+    observation_mechanism: "311 service requests by location"
+    visibility_interpretation: "Civic system visibility - NOT health related"
+    
+    ingestion_mode: "api"  # NYC Open Data API
+    data_url: "https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9"
+    
+    geographic_level: "point"  # Geocoded points
+    requires_crosswalk: true
+    crosswalk_method: "spatial_join"
+    crosswalk_target: "nta"
+    
+    available_strata: []  # No demographic stratification
+    
+    uncertainty_available: false
+    
+    notes: |
+      Contrast layer only - explicitly NOT health data.
+      Shows civic engagement/visibility patterns.
+      Useful for comparing health vs non-health system visibility.
+
+# =============================================================================
+# SOURCE CATEGORIES
+# =============================================================================
+categories:
+  survey:
+    name: "Survey Measurement"
+    description: "Population surveys with sampled respondents"
+    interpretation_note: "Visibility reflects survey measurement coverage, not population presence"
+  
+  utilization:
+    name: "Healthcare Utilization"
+    description: "Hospital and healthcare system encounters"
+    interpretation_note: "Visibility reflects healthcare contact, not population presence"
+  
+  enrollment:
+    name: "Program Enrollment"
+    description: "Public program membership/enrollment"
+    interpretation_note: "Visibility reflects program enrollment, not eligibility"
+  
+  vital_events:
+    name: "Vital Events"
+    description: "Registered births and deaths"
+    interpretation_note: "High completeness for registered events; narrow scope"
+  
+  civic:
+    name: "Civic Contact"
+    description: "Non-health civic system interactions"
+    interpretation_note: "NOT health data - for contrast only"
+
+# =============================================================================
+# DEFAULTS
+# =============================================================================
+defaults:
+  # Sources to include in primary analysis
+  enabled_sources:
+    - "chs"
+    - "sparcs"
+    - "enrollment"
+    - "vital"
+  
+  # Sources excluded by default
+  disabled_sources:
+    - "311"
+

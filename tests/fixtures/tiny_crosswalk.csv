@@ -1,0 +1,5 @@
+source_geo_id,target_geo_id,weight
+101,BK0101,0.6
+101,BK0102,0.4
+102,MN0101,1.0
+
